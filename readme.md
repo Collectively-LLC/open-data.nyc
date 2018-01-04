@@ -6,11 +6,10 @@ From the `site/web/app/themes/open-data-week-theme` directory, run:
 `npm install && bower install`
 
 Gulp Commands
-— Compile and optimize the files in your assets directory
-$ gulp
+`gulp` — Compile and optimize the files in your assets directory
 
-- Compile assets when file changes are made (BrowserSync installed on your browser and head to localhost:3000)
-$ gulp watch
 
-- Compile assets for production (no source maps)
-$ gulp --production 
+`gulp watch` - Compile assets when file changes are made (BrowserSync installed on your browser and head to localhost:3000)
+
+
+`gulp --production` - Compile assets for production (no source maps)
