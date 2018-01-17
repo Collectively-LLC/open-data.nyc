@@ -1,1 +1,81 @@
+// Site Containers Shell ///////////////////////////////////////
+	body { 
+		font-family: $brand-font; 
+		font-size: 100%; 
+		color: $black;
+		overflow-x: hidden;
+		width: 100%;
+	}
 
+	.container { 
+		max-width: 1260px; 
+	}
+
+	.content .main { 
+		padding: 0; 
+	}
+
+
+// FIIIIIFTHS ////////////////////////////////////////////
+	.col-xs-5ths,.col-sm-5ths,.col-md-5ths,.col-lg-5ths { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; display: inline-block; }
+	.col-xs-5ths { -webkit-box-flex: 0; -ms-flex: 0 0 19%; flex: 0 0 19%; max-width: 19%; }
+	@media (min-width: 768px) { .col-sm-5ths { -webkit-box-flex: 0; -ms-flex: 0 0 19%; flex: 0 0 19%; max-width: 19%; } }
+	@media (min-width: 992px) { .col-md-5ths { -webkit-box-flex: 0; -ms-flex: 0 0 19%; flex: 0 0 19%; max-width: 19%; } }
+	@media (min-width: 1200px) { .col-lg-5ths { -webkit-box-flex: 0; -ms-flex: 0 0 19%; flex: 0 0 19%; max-width: 19%; } }
+
+
+// Global Styles ///////////////////////////////////////
+
+	div, img, a, li { background-repeat: no-repeat; }
+
+	a { color: $blue; }
+	a:hover { color: $red; text-decoration: none; }
+
+	p:empty { display: none; }
+
+	.small { @extend small; }
+
+	:focus, :active { outline-color: $red; }
+
+	main img { max-width: 100%; }
+
+// Headers //////////////////////////////////////////
+	#{headings(1,6)} { 
+		font-weight: 400; 
+		color: $blue; 
+		line-height: 1.166666667; 
+		text-transform: uppercase;
+	}
+	h1 { font-size: 36px; }
+	h2 { font-size: 24px; line-height: 1.33; }
+	h3 { font-size: 20px; }
+	h4 { font-size: 18px; }
+	h5 { font-size: 16px; }
+	h6 { font-size: 14px; }
+
+/*	@media (max-width: $screen-sm-max) { 
+		h1 { font-size: 3.5em; }
+		h2 { font-size: 3em; }
+		h3 { font-size: 2em; }
+		h4 { font-size: 1.5em; }
+		h5 { font-size: .9em; }
+		h6 { font-size: .9em; }
+		}
+	@media (max-width: $screen-xs-max) { 
+		h1 { font-size: 1.75em; }
+		h2 { font-size: 1.5em; }
+		h3 { font-size: 1.25em; }
+		h4 { font-size: 1.25em; }
+		h5 { font-size: 1em; }
+		h6 { font-size: .9em; }
+		}
+*/
+
+
+
+
+
+// Collapse Admin Bar ///////////////////////////////////////
+	#wpadminbar { height:4px; overflow: hidden; } #wpadminbar:hover { height: auto; overflow: visible; } html[lang*="US"]{margin-top:0 !important;}
+	@media (max-width: $screen-md-min) { body.admin-bar { border-top: 46px dashed $transparent; } }
+	#wp-admin-bar-directory_settings .ab-item::before { content: '\f116'; top: 3px; }

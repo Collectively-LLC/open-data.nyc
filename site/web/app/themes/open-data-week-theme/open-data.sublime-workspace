@@ -1,0 +1,1348 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"black",
+				"black"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"pred",
+				"predefined_terms"
+			],
+			[
+				"program",
+				"program_url"
+			],
+			[
+				"agenda",
+				"agenda_meta"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"get_the_categ",
+				"get_the_category"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"the_author",
+				"the_author"
+			],
+			[
+				"the_authr",
+				"the_author"
+			],
+			[
+				"the_auth",
+				"the_author"
+			],
+			[
+				"get_thumbn",
+				"get_the_post_thumbnail_url"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"related_pr",
+				"related_program"
+			],
+			[
+				"dev",
+				"dev"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"wrapup",
+				"wrapup_category"
+			],
+			[
+				"delete_post",
+				"delete_post_meta"
+			],
+			[
+				"all",
+				"all_meta"
+			],
+			[
+				"padin",
+				"padding-right"
+			],
+			[
+				"scree",
+				"screen-sm-max"
+			],
+			[
+				"register_tax",
+				"register_taxonomy"
+			],
+			[
+				"over",
+				"overlay"
+			],
+			[
+				"get_the_post_thu",
+				"get_the_post_thumbnail_url"
+			],
+			[
+				"backgorund-",
+				"background-position"
+			],
+			[
+				"inlien",
+				"inline-table"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"apply",
+				"apply_status"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"get_categ",
+				"get_category_link"
+			],
+			[
+				"get_the_post_th",
+				"get_the_post_thumbnail_url"
+			],
+			[
+				"repea",
+				"repeat-x"
+			],
+			[
+				"get_the_thun",
+				"get_the_post_thumbnail_url"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"sessi",
+				"session_start"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"tex-t",
+				"text-align"
+			],
+			[
+				"array_k",
+				"array_key_exists"
+			],
+			[
+				"last",
+				"last-of-type"
+			],
+			[
+				"fonts",
+				"font-size"
+			],
+			[
+				"link",
+				"linktarget"
+			],
+			[
+				"get_options",
+				"get_alloptions"
+			],
+			[
+				"sub",
+				"subheader_box_set"
+			],
+			[
+				"wpauto",
+				"wpautop"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"screen",
+				"screen-xs-max"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"backgruo",
+				"background-repeat"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"bordcer",
+				"border-top-color"
+			],
+			[
+				"images",
+				"imagesL"
+			],
+			[
+				"upcoming",
+				"upcoming"
+			],
+			[
+				"hex",
+				"hexagon-i3"
+			],
+			[
+				"u",
+				"ucfirst"
+			],
+			[
+				"register_post",
+				"register_post_type\tRegister Post Type All Options"
+			],
+			[
+				"meta",
+				"meta"
+			],
+			[
+				"get_post_thum",
+				"get_the_post_thumbnail"
+			],
+			[
+				"testi",
+				"testimonials_set"
+			],
+			[
+				"testim",
+				"testimonial"
+			],
+			[
+				"testimi",
+				"testimonials"
+			],
+			[
+				"glob",
+				"global"
+			],
+			[
+				"Quote",
+				"Quote"
+			],
+			[
+				"testo",
+				"testimonial_"
+			],
+			[
+				"header_content",
+				"header_content_align"
+			],
+			[
+				"header",
+				"header_style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/header.php",
+			"settings":
+			{
+				"buffer_size": 941,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/layouts/_header.scss",
+			"settings":
+			{
+				"buffer_size": 1554,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/common/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 1712,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/layouts/_front-page.scss",
+			"settings":
+			{
+				"buffer_size": 49,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"intend",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inten",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reint",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Install Package Control"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 144.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/scripts",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/common",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/components",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/layouts",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/lib",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata"
+	],
+	"file_history":
+	[
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/layouts/_pages.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/layouts/_footer.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/components/_forms.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/components/_buttons.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/common/_global.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/main.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/functions.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/lib/setup.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/style.css",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/manifest.json",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/assets/styles/layouts/_header.scss",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/templates/content-front-page.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/page.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/front-page.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/templates/page-header.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/page-events.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/eventbrite.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/events_taxonomies.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/events_cpt.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/composer.json",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/events_tax_type.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/sponsors_cpt.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/partners_cpt.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/news_cpt.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/attached-posts.php",
+		"/Users/Toby/Sites/Collectively/MadaTech/madatech.dev/site/web/app/themes/friends-of-madatech/assets/cpt-meta/exhibits.php",
+		"/Users/Toby/Sites/Collectively/MadaTech/madatech.dev/site/web/app/themes/friends-of-madatech/assets/cpt-meta/board-of-directors.php",
+		"/Users/Toby/Sites/Collectively/MadaTech/madatech.dev/site/web/app/themes/friends-of-madatech/functions.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/cpts/sponsors.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/MODAdata/modadata.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/templates/header.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/mu-plugins/MODAdata/modadata.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/gulpfile.js",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/mu-plugins/MODAdata/index.php",
+		"/Users/Toby/Downloads/modadata/index.php",
+		"/Users/Toby/Downloads/modadata/LICENSE.txt",
+		"/Users/Toby/Downloads/modadata/modadata.php",
+		"/Users/Toby/Downloads/modadata/README.txt",
+		"/Users/Toby/Downloads/modadata/uninstall.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/themes/open-data-week-theme/templates/content-page.php",
+		"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/plugins/moda-data/modadata.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/style.css",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/sass/style.scss",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/sass/_map.scss",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/shortcodes.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/tribe-events/list/single-featured.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/functions.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/templates/paroll-card.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/templates/map-loop.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/templates/map-single.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/eb-custom.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/templates/eventbrite-single.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/templates/event-card.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/README.md",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/tribe-events/list/single-event.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/tribe-events/list/loop.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/front-page.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/tag.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/page.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/index.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/search.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/sidebar.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/404.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech/footer.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech-x/custom-cmb/cpt.php",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/site/web/app/themes/agtech-x/style.css",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/trellis/group_vars/development/vault.yml",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/trellis/vagrant.default.yml",
+		"/Users/Toby/Sites/Collectively/AgTech-X/agtech-x.com/trellis/group_vars/development/wordpress_sites.yml",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/entry-meta.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/layouts/_blog.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/upcoming-accordion.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/content-agenda.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/sidebar-blog.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/yarpp-template-thumbnail.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/content-single.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/composer.json",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/common/_variables.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/common/_global.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_page_elements.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/single.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/index.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/search.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/wpadminbar-archive.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_search_form.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/sidebar-blog-social.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/page-header.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_social_menu.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/layouts/_footer.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/functions.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/footer.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/content.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/layouts/_header.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/agenda_ctas.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/brickwall.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_brickwalls.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/wp/wp-content/themes/twentysixteen/template-parts/content-single.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/cta.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/content-programs.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/agenda.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/agenda_mailer/mailer_options.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/scripts/main.js",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/attached-directory.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/content-countries.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_overlay.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/entity-meta.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/mentors.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/layouts/_agenda.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/partners.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/alumni.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/brickwall-meta.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_cta.scss",
+		"/Users/Toby/Sites/Collectively/VentureOut/Daily Agenda",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/page.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/program-directory.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/templates/content-page.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/base.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/components/_buttons.scss",
+		"/Users/Toby/Sites/Collectively/MadaTech/madatech.dev/trellis/group_vars/development/wordpress_sites.yml",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/past_programs.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/programs.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/countries.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/bartabs.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/cpts/bartab-meta.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/counter.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/scripts/customizer.js",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/lib/setup.php",
+		"/Users/Toby/Sites/Collectively/VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/scripts/odometer.js"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"/Users/Toby/Sites/Collectively/MODA/open-data.nyc",
+			"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/",
+			"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/",
+			"/Users/Toby/Sites/Collectively/MODA/open-data.nyc/site/web/app/mu-plugins"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"anglecut",
+			"madatech",
+			"screen_icon",
+			"Partner",
+			"partner",
+			"sponsor",
+			"Sponsor",
+			"TEMPLATEPATH",
+			"js"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Sponsor",
+			"sponsor",
+			"Spartner",
+			"partner",
+			"Partner"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								941,
+								941
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/styles/layouts/_header.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 95.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/styles/common/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1523,
+								1523
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 263.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/styles/layouts/_front-page.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 49,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "open-data.sublime-project",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pages",
+				"open-data-week-theme/assets/styles/layouts/_pages.scss"
+			],
+			[
+				"footer.scss",
+				"open-data-week-theme/assets/styles/layouts/_footer.scss"
+			],
+			[
+				"forms",
+				"open-data-week-theme/assets/styles/components/_forms.scss"
+			],
+			[
+				"header.sc",
+				"open-data-week-theme/assets/styles/layouts/_header.scss"
+			],
+			[
+				"func",
+				"open-data-week-theme/functions.php"
+			],
+			[
+				"style",
+				"open-data-week-theme/style.css"
+			],
+			[
+				"header.scss",
+				"open-data-week-theme/assets/styles/layouts/_header.scss"
+			],
+			[
+				"page.",
+				"open-data-week-theme/page.php"
+			],
+			[
+				"page-he",
+				"open-data-week-theme/templates/page-header.php"
+			],
+			[
+				"header",
+				"open-data-week-theme/templates/header.php"
+			],
+			[
+				"comp",
+				"open-data.nyc/site/composer.json"
+			],
+			[
+				"events",
+				"ventureout-theme/page-events.php"
+			],
+			[
+				"composer",
+				"open-data.nyc/site/composer.json"
+			],
+			[
+				"spons",
+				"MODAdata/sponsors_cpt.php"
+			],
+			[
+				"partner",
+				"MODAdata/partners_cpt.php"
+			],
+			[
+				"attached",
+				"ventureout-theme/assets/cpts/attached-posts.php"
+			],
+			[
+				"exhibi",
+				"friends-of-madatech/assets/cpt-meta/exhibits.php"
+			],
+			[
+				"board.php",
+				"friends-of-madatech/assets/cpt-meta/board-of-directors.php"
+			],
+			[
+				"funct",
+				"friends-of-madatech/functions.php"
+			],
+			[
+				"fun",
+				"open-data-week-theme/functions.php"
+			],
+			[
+				"functio",
+				"open-data-week-theme/functions.php"
+			],
+			[
+				"functions",
+				"open-data-week-theme/functions.php"
+			],
+			[
+				"short",
+				"shortcodes.php"
+			],
+			[
+				"featured",
+				"tribe-events/list/single-featured.php"
+			],
+			[
+				"entry-me",
+				"ventureout-theme/templates/entry-meta.php"
+			],
+			[
+				"blog.sc",
+				"ventureout-theme/assets/styles/layouts/_blog.scss"
+			],
+			[
+				"content-agen",
+				"ventureout-theme/templates/content-agenda.php"
+			],
+			[
+				"upcoming-",
+				"ventureout-theme/assets/shortcodes/upcoming-accordion.php"
+			],
+			[
+				"varia",
+				"ventureout-theme/assets/styles/common/_variables.scss"
+			],
+			[
+				"variab",
+				"ventureout-theme/assets/styles/common/_variables.scss"
+			],
+			[
+				"compose",
+				"VentureOut/ventureout.com/site/composer.json"
+			],
+			[
+				"global.scs",
+				"ventureout-theme/assets/styles/common/_global.scss"
+			],
+			[
+				"entry",
+				"ventureout-theme/templates/entry-meta.php"
+			],
+			[
+				"meta",
+				"ventureout-theme/templates/entry-meta.php"
+			],
+			[
+				"sidebar-",
+				"ventureout-theme/templates/sidebar-blog.php"
+			],
+			[
+				"content-single",
+				"ventureout-theme/templates/content-single.php"
+			],
+			[
+				"page_elements.scss",
+				"ventureout-theme/assets/styles/components/_page_elements.scss"
+			],
+			[
+				"single",
+				"ventureout-theme/single.php"
+			],
+			[
+				"archive.p",
+				"ventureout-theme/assets/cpts/wpadminbar-archive.php"
+			],
+			[
+				"side-b",
+				"ventureout-theme/templates/sidebar-blog.php"
+			],
+			[
+				"search.sc",
+				"ventureout-theme/assets/styles/components/_search_form.scss"
+			],
+			[
+				"inde",
+				"ventureout-theme/index.php"
+			],
+			[
+				"search",
+				"ventureout-theme/search.php"
+			],
+			[
+				"page-header",
+				"ventureout-theme/templates/page-header.php"
+			],
+			[
+				"function",
+				"ventureout-theme/functions.php"
+			],
+			[
+				"footer",
+				"ventureout-theme/assets/styles/layouts/_footer.scss"
+			],
+			[
+				"content",
+				"ventureout-theme/templates/content.php"
+			],
+			[
+				"agenda",
+				"ventureout-theme/templates/content-agenda.php"
+			],
+			[
+				"templates-meta",
+				"ventureout-theme/templates/entry-meta.php"
+			],
+			[
+				"header.s",
+				"ventureout-theme/assets/styles/layouts/_header.scss"
+			],
+			[
+				"elements",
+				"ventureout-theme/assets/styles/components/_page_elements.scss"
+			],
+			[
+				"sidebar",
+				"ventureout-theme/templates/sidebar-blog.php"
+			],
+			[
+				"global.scss",
+				"ventureout-theme/assets/styles/common/_global.scss"
+			],
+			[
+				"blog.",
+				"ventureout-theme/assets/styles/layouts/_blog.scss"
+			],
+			[
+				"contnet-sing",
+				"VentureOut/ventureout.com/site/web/wp/wp-content/themes/twentysixteen/template-parts/content-single.php"
+			],
+			[
+				"cta",
+				"ventureout-theme/assets/shortcodes/cta.php"
+			],
+			[
+				"agen",
+				"ventureout-theme/assets/shortcodes/agenda_ctas.php"
+			],
+			[
+				"content-",
+				"ventureout-theme/templates/content-programs.php"
+			],
+			[
+				"agenda.ph",
+				"ventureout-theme/assets/cpts/agenda.php"
+			],
+			[
+				"content-age",
+				"ventureout-theme/templates/content-agenda.php"
+			],
+			[
+				"countries",
+				"ventureout-theme/templates/content-countries.php"
+			],
+			[
+				"content-progr",
+				"ventureout-theme/templates/content-programs.php"
+			],
+			[
+				"agenda.sc",
+				"ventureout-theme/assets/styles/layouts/_agenda.scss"
+			],
+			[
+				"content-pro",
+				"ventureout-theme/templates/content-programs.php"
+			],
+			[
+				"elements.cs",
+				"ventureout-theme/assets/styles/components/_page_elements.scss"
+			],
+			[
+				"main.js",
+				"ventureout-theme/assets/scripts/main.js"
+			],
+			[
+				"directory",
+				"ventureout-theme/assets/shortcodes/attached-directory.php"
+			],
+			[
+				"brickwall.scss",
+				"ventureout-theme/assets/styles/components/_brickwalls.scss"
+			],
+			[
+				"overlays",
+				"ventureout-theme/assets/styles/components/_overlay.scss"
+			],
+			[
+				"brickwall",
+				"ventureout-theme/assets/cpts/brickwall-meta.php"
+			],
+			[
+				"main.",
+				"ventureout-theme/assets/scripts/main.js"
+			],
+			[
+				"cta.",
+				"ventureout-theme/assets/styles/components/_cta.scss"
+			],
+			[
+				"agendac",
+				"ventureout-theme/assets/shortcodes/agenda_ctas.php"
+			],
+			[
+				"agenda.c",
+				"ventureout-theme/assets/styles/layouts/_agenda.scss"
+			],
+			[
+				"alumni",
+				"ventureout-theme/assets/cpts/alumni.php"
+			],
+			[
+				"content-page",
+				"ventureout-theme/templates/content-page.php"
+			],
+			[
+				"functi",
+				"ventureout-theme/functions.php"
+			],
+			[
+				"base",
+				"ventureout-theme/base.php"
+			],
+			[
+				"page-hea",
+				"ventureout-theme/templates/page-header.php"
+			],
+			[
+				"buttons",
+				"ventureout-theme/assets/styles/components/_buttons.scss"
+			],
+			[
+				"header.css",
+				"ventureout-theme/assets/styles/layouts/_header.scss"
+			],
+			[
+				"age",
+				"ventureout-theme/assets/shortcodes/agenda_ctas.php"
+			],
+			[
+				"past",
+				"VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/shortcodes/past_programs.php"
+			],
+			[
+				"page_ele",
+				"ventureout-theme/assets/styles/components/_page_elements.scss"
+			],
+			[
+				"footer.css",
+				"ventureout-theme/assets/styles/layouts/_footer.scss"
+			],
+			[
+				"globa",
+				"ventureout-theme/assets/styles/common/_global.scss"
+			],
+			[
+				"content-countr",
+				"ventureout-theme/templates/content-countries.php"
+			],
+			[
+				"program",
+				"ventureout-theme/templates/content-programs.php"
+			],
+			[
+				"upcoming",
+				"ventureout-theme/assets/shortcodes/upcoming-accordion.php"
+			],
+			[
+				"barta",
+				"ventureout-theme/assets/cpts/bartab-meta.php"
+			],
+			[
+				"countr",
+				"ventureout-theme/assets/cpts/countries.php"
+			],
+			[
+				"programs",
+				"ventureout-theme/assets/cpts/programs.php"
+			],
+			[
+				"compo",
+				"VentureOut/ventureout.com/site/composer.json"
+			],
+			[
+				"page",
+				"ventureout-theme/assets/styles/components/_page_elements.scss"
+			],
+			[
+				"footer.c",
+				"VentureOut/ventureout.com/site/web/app/themes/ventureout-theme/assets/styles/layouts/_footer.scss"
+			],
+			[
+				"social",
+				"ventureout-theme/assets/styles/components/_social_menu.scss"
+			],
+			[
+				"button",
+				"ventureout-theme/assets/styles/components/_buttons.scss"
+			],
+			[
+				"main.c",
+				"ventureout-theme/assets/styles/main.scss"
+			],
+			[
+				"glob",
+				"ventureout-theme/assets/styles/common/_global.scss"
+			],
+			[
+				"variables",
+				"ventureout-theme/assets/styles/common/_variables.scss"
+			],
+			[
+				"global.c",
+				"ventureout-theme/assets/styles/common/_global.scss"
+			],
+			[
+				"header.cs",
+				"ventureout-theme/assets/styles/layouts/_header.scss"
+			],
+			[
+				"content-cou",
+				"ventureout-theme/templates/content-countries.php"
+			],
+			[
+				"conte",
+				"ventureout-theme/templates/content-programs.php"
+			],
+			[
+				"resource",
+				"ventureout-theme/assets/shortcodes/resource-slider.php"
+			],
+			[
+				"bartabs",
+				"ventureout-theme/assets/shortcodes/bartabs.php"
+			],
+			[
+				"header-me",
+				"ventureout-theme/assets/cpts/header-meta.php"
+			],
+			[
+				"brickwa",
+				"ventureout-theme/assets/cpts/brickwall-meta.php"
+			],
+			[
+				"brick",
+				"ventureout-theme/assets/shortcodes/brickwall.php"
+			],
+			[
+				"bartab",
+				"ventureout-theme/assets/cpts/bartab-meta.php"
+			],
+			[
+				"bartab-me",
+				"ventureout-theme/assets/cpts/bartab-meta.php"
+			],
+			[
+				"attached-",
+				"ventureout-theme/assets/shortcodes/attached-directory.php"
+			],
+			[
+				"bartabs.c",
+				"ventureout-theme/assets/styles/components/_bartabs.scss"
+			],
+			[
+				"functioo",
+				"ventureout-theme/node_modules/cssnano/dist/lib/functionOptimiser.js"
+			],
+			[
+				"header-m",
+				"ventureout-theme/assets/cpts/header-meta.php"
+			],
+			[
+				"global.sc",
+				"ventureout-theme/assets/styles/common/_global.scss"
+			],
+			[
+				"404",
+				"ventureout-theme/404.php"
+			],
+			[
+				"content-countries",
+				"ventureout-theme/templates/content-countries.php"
+			],
+			[
+				"cta.sc",
+				"ventureout-theme/assets/styles/components/_cta.scss"
+			],
+			[
+				"mailer",
+				"ventureout-theme/assets/agenda_mailer/mailer.php"
+			],
+			[
+				"atta",
+				"ventureout-theme/assets/shortcodes/attached-directory.php"
+			],
+			[
+				"agenda_cta",
+				"ventureout-theme/assets/shortcodes/agenda_ctas.php"
+			],
+			[
+				"main.j",
+				"ventureout-theme/assets/scripts/main.js"
+			],
+			[
+				"_varia",
+				"ventureout-theme/assets/styles/common/_variables.scss"
+			],
+			[
+				"footer.",
+				"ventureout-theme/templates/footer.php"
+			],
+			[
+				"past_pro",
+				"ventureout-theme/assets/shortcodes/past_programs.php"
+			],
+			[
+				"_over",
+				"ventureout-theme/assets/styles/components/_overlay.scss"
+			],
+			[
+				"_bar",
+				"ventureout-theme/assets/styles/components/_bartabs.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "venture",
+		"selected_items":
+		[
+			[
+				"venture",
+				"~/Sites/Collectively/VentureOut/VentureOut.sublime-project"
+			],
+			[
+				"emp",
+				"~/Sites/EmpireMockTrial/Sandbox/Empire.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

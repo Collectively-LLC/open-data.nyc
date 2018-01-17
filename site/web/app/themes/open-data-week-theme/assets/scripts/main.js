@@ -75,3 +75,90 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+
+
+////
+//// CUSTOM JS
+////
+jQuery(document).ready(function(){
+
+  
+  // Header animation
+  jQuery('.custom-logo').hover(
+      function() { jQuery('header.banner').addClass('active'); 
+        }, function() { jQuery('header.banner').removeClass('active'); }
+  );
+
+
+  // Equate Carousel Heights
+  function carouselNormalization() {
+    
+    jQuery('.carousel').each(function() { 
+    var items = jQuery(this).find('.carousel-item'), //grab all slides
+        heights = [], //create empty array to store height values
+        tallest; //create variable to make note of the tallest slide
+        function normalizeHeights() {
+            items.each(function() { //add heights to array
+                heights.push(jQuery(this).height()); 
+            });
+            tallest = Math.max.apply(null, heights); //cache largest value
+            items.each(function() {
+                jQuery(this).css('min-height',tallest + 'px');
+            });
+        }
+        if (items.length) { normalizeHeights(); }
+        jQuery(window).on('resize orientationchange', function () {
+            tallest = 0; heights = []; //reset vars
+            items.each(function() {
+                jQuery(this).css('min-height','0'); //reset min-height
+            }); 
+            if (items.length) { normalizeHeights(); } //run it again 
+        });
+
+    });
+  }
+  jQuery(document).ready(carouselNormalization());
+
+
+  // Wrap WPCF7 Output in a Container 
+  jQuery( document ).ajaxComplete(function() {
+    jQuery(".wpcf7-response-output").wrapInner("<div></div>");
+    });
+
+
+
+
+
+
+
+}); // End CUSTOM
+
+
+
+/* FitText.js 1.2 */
+(function( $ ){
+  $.fn.fitText = function( kompressor, options ) {
+    // Setup options
+    var compressor = kompressor || 1,
+        settings = $.extend({
+          'minFontSize' : Number.NEGATIVE_INFINITY,
+          'maxFontSize' : Number.POSITIVE_INFINITY
+        }, options);
+    return this.each(function(){
+      // Store the object
+      var $this = $(this);
+      // Resizer() resizes items based on the object width divided by the compressor * 10
+      var resizer = function () {
+        $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+      };
+      // Call once to set.
+      resizer();
+      // Call on resize. Opera debounces their resize by default.
+      $(window).on('resize.fittext orientationchange.fittext', resizer);
+    });
+  };
+  $('.fittext').fitText();
+})( jQuery );
+

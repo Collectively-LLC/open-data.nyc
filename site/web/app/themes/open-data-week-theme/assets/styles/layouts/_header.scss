@@ -1,0 +1,92 @@
+// Header : Branding / Navigation
+
+header.banner {
+	border-bottom: 1px solid red;
+	position: relative;
+	.row {
+		height: 88px;
+		
+		// Logo 
+		.brand {
+			width: 220px;
+			height: auto;
+			display: block;
+			background-size: cover;
+			text-indent: -100vw;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		// Navigation
+		nav.navbar {
+			margin: 0 20px -20px;
+			@media (min-width: $screen-lg-min) { 
+				display: block !important; 
+			}
+			@media (max-width: $screen-md-max) { 
+				position: absolute;
+				z-index: 999;
+				top: 88px;
+				right: 0;
+				left: 0;
+				background: $white;
+				margin: 0;
+				padding: 0;
+				.navbar-nav, .navbar-nav li, .navbar-nav a { width: 100% !important; margin: 0 !important; }
+			}
+			.navbar-collapse { 
+				.navbar-nav {
+					li {
+						display: inline-block;
+						margin: 0 20px;
+						a {
+							display: inline-block;
+							height: 52px;
+							line-height: 52px;
+							font-size: 18px;
+							width: auto;
+							color: $white;
+							background: $blue;
+							padding: 0 16px;
+							text-align: center;
+							text-transform: uppercase;
+							border: 2px solid $transparent;
+							&:hover {
+								color: $blue;
+								background: $white;
+								border: 2px solid $blue;
+							}
+						}
+						&:nth-of-type(2) a:hover { color: $red; border-color: $red; } 
+						&:nth-of-type(3) a:hover { color: $yellow; border-color: $yellow; } 
+
+					}
+				}
+			}
+		}
+
+		// Mobile Nav Button
+		.navbar-toggler {
+			@media (min-width: $screen-lg-min) { 
+				display: none !important; 
+			}
+			@extend .navbar-light;
+			background-color: $white;
+			color: $blue;
+			border-radius: 0;
+			margin: 0 20px;
+			border: 1px solid $blue;
+			&[aria-expanded="true"] {
+				background: $blue;
+				color: $white;
+			}
+		}
+
+
+	} // .row
+} // header
+
+

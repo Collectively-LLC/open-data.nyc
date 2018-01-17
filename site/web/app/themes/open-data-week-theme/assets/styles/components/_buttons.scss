@@ -1,0 +1,21 @@
+// Buttons
+
+.button {
+
+	display: inline-block;
+	min-width: 196px;
+	width: auto;
+	min-height: 76px;
+	line-height: 1.5;
+	color: $grey;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid $grey;
+	padding: 21px 12px;
+	
+	&:hover {
+		background-color: $grey;
+		color: $white;
+		}
+
+}

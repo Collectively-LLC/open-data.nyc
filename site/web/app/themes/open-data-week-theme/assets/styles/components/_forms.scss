@@ -1,3 +1,120 @@
+// Forms
+
+form {
+
+	input {
+		display: inline-block;
+		border-radius: 0;
+	}
+	input[type="text"] {
+		background: $white;
+		color: $black;
+		border: none;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 .5em;
+	}
+	input[type="submit"] {
+		background: $blue;
+		color: $white;
+		border: none;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 .75em;
+		&:hover {
+			background: $red;
+		}
+	}
+
+	&.wpcf7-form, &[id*="give-form"], &[id*="give-form"] .form-row {
+
+		max-width: 590px;
+		margin: 0 auto;
+		position: relative;
+		
+		.row > div {
+			margin-bottom: 30px;
+		}
+		
+		p { 
+			width: 100%;
+		}
+
+		label {
+			font-size: 20px;
+			line-height: 24px;
+			height: 24px;
+			font-weight: 500;
+			color: $grey;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="tel"], textarea {
+			width: 100%;
+			background: $white;
+			border: 1px solid $white !important;
+		}
+		textarea {
+			height: 119px;
+		}
+
+		input[type="submit"] {
+			display: block;
+			float: none;
+			margin: 6px auto;
+			background: transparent;
+			color: $grey;
+			border: 2px solid $grey;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 76px;
+			height: 80px;
+			min-width: 220px;
+			&:hover {
+				color: $white;
+				background: $blue;
+				border-color: $blue;
+			}
+		}
+
+		// error/success message; spinning arrows
+		.wpcf7-response-output, .ajax-loader {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		// spinning arrow takes no space when hidden
+		.ajax-loader:not(.is-active) {
+			height: 0;
+		}
+		// success message
+		.wpcf7-response-output.wpcf7-mail-sent-ok {
+			position: absolute;
+			top:0;left:0;bottom:0;right:0;
+			background: white;
+			border: none;
+			font-size: 24px;
+			font-style: italic;
+			font-weight: 500;
+			display: flex !important;
+			align-items: center;
+		}
+		// field error messages
+		.wpcf7-not-valid-tip {
+			font-size: 16px;
+		}
+
+	}
+
+
+}
+
+
+// Form Field Fixes 
+ input[type="email"] { @extend input[type="text"]; }
+
+
+
 // Search form
 .search-form {
   @extend .form-inline;

@@ -1,0 +1,56 @@
+// Footer : Widgets
+
+footer.content-info {
+
+	background: $grey;
+	color: $white;
+	font-size: 14px;
+	line-height: 1.86;
+	overflow: hidden;
+	
+	.container {
+		padding-top: 71px;
+	}
+
+	.widget { 
+		@extend .col-lg-3, .col-md-6, .col-sm-12;
+		padding-bottom: 71px;
+	}
+
+	#{headings(1,6)} { 
+		color: $white;
+		text-transform: uppercase;
+		&:after {
+			width: 73px;
+			height: 7px;
+		}
+	}
+	h3 {
+		margin-bottom: 47px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style-type: '> ';
+			list-style-position: inside;
+			text-transform: uppercase;
+		}
+	}
+
+	a {
+		color: $white;
+		&:hover { 
+			color: $red;
+		}
+	}
+
+
+	.copy {
+		color: $blue;
+		text-align: center;
+		padding: 0 16px;
+	}
+
+}

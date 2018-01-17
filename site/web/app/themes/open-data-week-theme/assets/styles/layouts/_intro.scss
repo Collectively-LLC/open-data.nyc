@@ -1,0 +1,39 @@
+// Header : Branding / Navigation
+
+#intro {
+
+	background: red;
+	min-height: calc(100vh - 100px);
+
+	.container-fluid {
+		background: $white;
+		padding: 32px 0;
+		text-align: center;
+		
+		.line {
+			display: block;
+			width: 100%;
+			text-transform: uppercase;
+			&.one {
+				font-size: 129px;
+				font-weight: 100;
+			}
+			&.two {
+				font-size: 73px;
+				font-weight: 600;
+			}
+			&.three {
+				font-size: 62px;
+				margin-bottom: 0;
+			}
+			@media (max-width: $screen-md-max) {
+				&.one { font-size: 9vw; }
+				&.two { font-size: 5.25vw; }
+				&.three { font-size: 4.75vw; }
+			}
+		}
+	
+
+	}
+
+}

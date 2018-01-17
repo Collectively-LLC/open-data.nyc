@@ -29,13 +29,17 @@ function setup() {
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage')
   ]);
+   /* Register Custom Navigation Walker */ require('navwalker.php');
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-
+  
+  // Enable custom site logo
+  add_theme_support( 'custom-logo' );
+  
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);

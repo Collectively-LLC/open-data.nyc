@@ -1,3 +1,65 @@
 // Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+	$main-sm-columns:       12;
+	$sidebar-sm-columns:    4;
+
+// Breakpoints
+	$screen-sm-min: 576px;
+	$screen-md-min: 768px;
+	$screen-lg-min: 992px;
+	$screen-xl-min: 1200px;
+	$screen-xs-max: ($screen-sm-min - 1);
+	$screen-sm-max: ($screen-md-min - 1);
+	$screen-md-max: ($screen-lg-min - 1);
+
+// Colors
+	$blue: #00B0DE;
+	$lightblue: #4DC8E8;
+	$red: #F34134;
+	$yellow: #FDC401;
+	// Greys
+	$grey: #969696;
+	$lightgrey: #D7D7D7;
+	$lightergrey: #E3E3E3;
+	$lightestgrey: #F3F2F2;
+	// Apex
+	$white: #ffffff;
+	$black: #000000;
+	$transparent: rgba(255,255,255,.0);
+
+// Color Schemes
+	.blue { 	color: $blue; }
+	.blue-bg {		background-color: $blue; }
+	.red { 		color: $red; }
+	.red-bg {		background-color: $red; }
+	.yellow { 	color: $yellow; }
+	.yellow-bg {	background-color: $yellow; }
+
+	.grey { 		color: $grey; }
+	.grey-bg {			background-color: $grey; }
+	.lightgrey { 	color: $lightgrey; }
+	.lightgrey-bg {		background-color: $lightgrey; }
+	.lightergrey { 	color: $lightergrey; }
+	.lightergrey-bg {	background-color: $lightergrey; }
+	.lightestgrey { color: $lightestgrey; }
+	.lightestgrey-bg {	background-color: $lightestgrey; }
+	
+	.white { 	color: $white; }
+	.white-bg {		background-color: $white; }
+	.black { 	color: $black; }
+	.black-bg {		background-color: $black; }
+	.trans {	color: $transparent; }
+	.trans-bg {		background-color: $transparent; }
+
+// Fonts		
+	$brand-font:	'Helvetica';
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+
+
+// Target All Headers via  --->  #{headings(1,6)}
+	@function headings($from:1, $to:6) {
+	    @if $from == $to {
+	        @return 'h#{$from}';
+	    } @else {
+	        @return 'h#{$from},' + headings($from+1, $to);
+	    }
+	}
