@@ -6,7 +6,7 @@ function moda_events_calendar( $atts=null ) {
 
 	
 <div id="calendar" class="container">
-	<div class="row">
+<div class="row">
 
 
 	<h2>Mine Your Own Data</h2>
@@ -60,7 +60,7 @@ function moda_events_calendar( $atts=null ) {
 
 
 
-
+</div>
 </div>
 
 

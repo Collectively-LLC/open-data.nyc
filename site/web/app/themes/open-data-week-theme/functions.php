@@ -61,6 +61,9 @@ $CMS = [
 // Sponsors
   /*CPT*/   'MODAdata/sponsors_cpt.php',
 
+// Footer
+  /*Content*/   'MODAdata/footer_content.php',
+
 ];
 
 foreach ($CMS as $file) {

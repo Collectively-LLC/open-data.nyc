@@ -53,23 +53,19 @@
 	h5 { font-size: 16px; }
 	h6 { font-size: 14px; }
 
-/*	@media (max-width: $screen-sm-max) { 
-		h1 { font-size: 3.5em; }
-		h2 { font-size: 3em; }
-		h3 { font-size: 2em; }
-		h4 { font-size: 1.5em; }
-		h5 { font-size: .9em; }
-		h6 { font-size: .9em; }
-		}
-	@media (max-width: $screen-xs-max) { 
-		h1 { font-size: 1.75em; }
-		h2 { font-size: 1.5em; }
-		h3 { font-size: 1.25em; }
-		h4 { font-size: 1.25em; }
-		h5 { font-size: 1em; }
-		h6 { font-size: .9em; }
-		}
-*/
+// Frequent Elements //////////////////////////////////////////
+
+	.blue-border {
+		border: 4px solid $blue;
+	}
+
+	.rounded {
+		border-radius: 8px;
+	}
+
+
+
+
 
 
 

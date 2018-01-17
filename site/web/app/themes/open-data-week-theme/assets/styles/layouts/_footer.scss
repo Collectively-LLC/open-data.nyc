@@ -1,56 +1,60 @@
 // Footer : Widgets
 
-footer.content-info {
+footer {
 
-	background: $grey;
-	color: $white;
-	font-size: 14px;
-	line-height: 1.86;
+	padding: 36px 0 56px;
 	overflow: hidden;
+	font-size: 92%;
 	
-	.container {
-		padding-top: 71px;
-	}
+	.row {
+		display: flex;
 
-	.widget { 
-		@extend .col-lg-3, .col-md-6, .col-sm-12;
-		padding-bottom: 71px;
-	}
-
-	#{headings(1,6)} { 
-		color: $white;
-		text-transform: uppercase;
-		&:after {
-			width: 73px;
-			height: 7px;
+		> div {
+			padding: 20px 0;
 		}
-	}
-	h3 {
-		margin-bottom: 47px;
-	}
 
-	ul {
-		padding: 0;
-		margin: 0;
-		li {
-			list-style-type: '> ';
-			list-style-position: inside;
-			text-transform: uppercase;
+		.legal {
+			order: 1;
+			@media (max-width: $screen-sm-max) { order: 2; 
+				text-align: center;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+		
+			ul {
+				padding: 0;
+				margin: 0 0 0 -12px;
+				list-style: none;
+				li {
+					display: inline-block;
+					&+li:before {
+						content: '|';
+					}
+					a {
+						padding: 2px 12px;
+					}
+				}
+			}
+
 		}
-	}
+	
+		.shoutout {
+			order: 2;
+			@media (max-width: $screen-sm-max) { order: 1; }
+			
+			text-align: center;
+			max-width: 280px;
+			margin: 0 auto;
+			line-height: 1.25;
+			p {
+				margin-bottom: 4px;
+			}
+			img {
+				max-width: 80px;
+			}
 
-	a {
-		color: $white;
-		&:hover { 
-			color: $red;
 		}
-	}
 
-
-	.copy {
-		color: $blue;
-		text-align: center;
-		padding: 0 16px;
 	}
 
 }
