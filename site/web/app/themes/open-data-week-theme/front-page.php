@@ -56,25 +56,29 @@
 			</div>
 		</div>
 
-		<div class="row section-sponsors blue-border">
+		<div class="row section-sponsors blue-border text-center justify-content-center">
 			<div class="col-xl-12">
-				<h2 class="section_title">Open Data Week is brought to you by</h2>
+				<h2 class="section_title text-uncap font-italic">Open Data Week is brought to you by</h2>
 			</div>
-			<div class="col-xl-12">
-				<a href="#">NYC OpenData</a>
-				<a href="#">NYC Analytics</a>
-				<a href="#">NYC Information Technology &amp; Telecommunications</a>
+			<div class="row col-xl-12 text-center justify-content-around align-items-center">
+				<?php 	
+					$sponsors = moda_get_items('sponsors');
+					foreach($sponsors as $id=>$sponsor) {
+						echo '<a href="#"><img src="'.get_the_post_thumbnail_url( $id, 'medium' ).'" 
+						alt="'.$sponsor->post_title.'" /></a>';
+					} 
+				?>
 			</div>
 		</div>
 
-		<div class="row section-coordinate circle-bg">
-			<h3 class="rounded lightgrey-bg">
-				Interested in putting on an event or adding your existing event to our list?
-				Click here to email our coordinator.
+		<div class="row section-coordinate circle-bg justify-content-center">
+			<h3 class="rounded blurb text-center white-bg">
+				Interested in putting on an event or adding your existing event to our list?<br />
+				<a href="#"><strong>Click here</strong> to email our coordinator</a>.
 			</h3>
-			<div class="col-xl-12">
-				<h3>Stay up to date on all things NYC Open Data</h3>
-				<form id="newsletter">
+			<div class="newsletter col-xl-12 text-center">
+				<h2><strong>Stay up to date on all things NYC Open Data</strong></h2>
+				<form id="newsletter" class="one_field">
 					<input type="text" placeholder="enter your email address" />
 					<input type="submit" value="Subscribe" />
 				</form>

@@ -47,24 +47,62 @@
 		text-transform: uppercase;
 	}
 	h1 { font-size: 36px; }
-	h2 { font-size: 24px; line-height: 1.33; }
-	h3 { font-size: 20px; }
-	h4 { font-size: 18px; }
-	h5 { font-size: 16px; }
-	h6 { font-size: 14px; }
+	h2 { font-size: 28px; line-height: 1.33; }
+	h3 { font-size: 24px; }
+	h4 { font-size: 20px; }
+	h5 { font-size: 18px; }
+	h6 { font-size: 16px; }
 
-// Frequent Elements //////////////////////////////////////////
+
+// Standardized Features //////////////////////////////////////////
 
 	.blue-border {
 		border: 4px solid $blue;
 	}
 
 	.rounded {
-		border-radius: 8px;
+		border-radius: 16px;
+	}
+
+	.blurb {
+		max-width: 492px;
+		padding: 24px 48px;
+		margin: 0 auto;
+		text-transform: none;
+	}
+
+	.text-uncap {
+		text-transform: none;
 	}
 
 
+// Circle BG //////////////////////////////////////////
+	.circle-bg {
+		position: relative;
+		overflow: hidden;
+		>* {
+			z-index: 2;
+		}
 
+		&:after {
+			z-index: 0;
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			margin: 0 auto;
+			border-radius: 50%;
+			width: 100%;
+			max-width: 748px;
+			min-width: 480px;
+			height: 88vw;
+			max-height: 740px;
+			min-height: 480px;
+			background: $lightestgrey;
+
+		}
+
+	}
 
 
 

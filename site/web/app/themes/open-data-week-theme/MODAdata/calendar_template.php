@@ -50,7 +50,7 @@ function moda_events_calendar( $atts=null ) {
 			
 			
 			
-			<?=print_r(moda_get_events(),true);?>
+			<?=print_r(moda_get_items('events'),true);?>
 
 
 

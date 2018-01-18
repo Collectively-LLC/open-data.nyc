@@ -4,27 +4,56 @@ form {
 
 	input {
 		display: inline-block;
-		border-radius: 0;
-	}
-	input[type="text"] {
+		@extend .rounded;
 		background: $white;
+		border: 2px solid $white;
 		color: $black;
-		border: none;
-		height: 38px;
-		line-height: 38px;
-		padding: 0 .5em;
-	}
-	input[type="submit"] {
-		background: $blue;
-		color: $white;
-		border: none;
-		height: 38px;
-		line-height: 38px;
-		padding: 0 .75em;
-		&:hover {
+		vertical-align: middle;
+		font-size: 92%;
+		margin-top: 4px;
+		margin-bottom: 8px;
+		&[type="text"] {
+			height: 42px;
+			line-height: 42px;
+			padding: 0 24px;
+		}
+		&[type="submit"] {
 			background: $red;
+			color: $white;
+			font-weight: bold;
+			text-transform: uppercase;
+			border: 2px solid $red;
+			height: 42px;
+			line-height: 42px;
+			padding: 0 24px;
+			min-width: 200px;
+			&:hover {
+				background: $white;
+				color: $red;
+			}
+		}
+		&:placeholder-shown {
+			font-style: italic;
 		}
 	}
+
+
+	&.one_field {
+		input {
+			margin-left: 12px;
+			margin-right: 12px;
+			&[type="text"] {
+				border-color: $grey;
+				width: calc(100% - 200px - 48px - 8px); // 100% - submit width - 12*2*2 padding - 2*2*2 borders
+				min-width: 280px;
+				font-weight: bold;
+				&:placeholder-shown {
+					color: $black;
+				}
+			}
+		}
+	}
+
 
 	&.wpcf7-form, &[id*="give-form"], &[id*="give-form"] .form-row {
 

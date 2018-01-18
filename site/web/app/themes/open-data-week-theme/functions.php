@@ -39,6 +39,9 @@ $cmb_pre = '_odw_'; function cmb_pre() { global $cmb_pre; return $cmb_pre; }
 // DECLARE CPTS, META BOXES, SHORTCODES
 $CMS = [
 
+// Global
+  /*Functions*/   'MODAdata/global_functions.php',   
+
 // Intro
   /*Content*/   'MODAdata/intro_content.php',   
 
