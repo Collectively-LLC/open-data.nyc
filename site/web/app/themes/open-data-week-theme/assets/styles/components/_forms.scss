@@ -2,7 +2,7 @@
 
 form {
 
-	input {
+	input, textarea {
 		display: inline-block;
 		@extend .rounded;
 		background: $white;
@@ -17,6 +17,10 @@ form {
 			line-height: 42px;
 			padding: 0 24px;
 		}
+		@at-root textarea {
+			padding: 12px 24px;
+			height: 196px;
+		}
 		&[type="submit"] {
 			background: $red;
 			color: $white;
@@ -27,6 +31,7 @@ form {
 			line-height: 42px;
 			padding: 0 24px;
 			min-width: 200px;
+			cursor: pointer;
 			&:hover {
 				background: $white;
 				color: $red;
@@ -55,18 +60,19 @@ form {
 	}
 
 
-	&.wpcf7-form, &[id*="give-form"], &[id*="give-form"] .form-row {
-
-		max-width: 590px;
+	&.wpcf7-form {
+		@extend .container;
+		max-width: 100%;
 		margin: 0 auto;
 		position: relative;
 		
-		.row > div {
-			margin-bottom: 30px;
+		p { 
+			@extend .row;
+			width: 100%;
 		}
 		
-		p { 
-			width: 100%;
+		br {
+			display: none;
 		}
 
 		label {
@@ -78,36 +84,30 @@ form {
 			margin-bottom: 10px;
 		}
 
+		.wpcf7-form-control-wrap {
+			@extend .col-sm-12, .col-md-12, .col-lg-6;
+			margin-bottom: 28px;
+		}
 		input[type="text"], input[type="tel"], textarea {
 			width: 100%;
-			background: $white;
-			border: 1px solid $white !important;
-		}
-		textarea {
-			height: 119px;
 		}
 
 		input[type="submit"] {
-			display: block;
-			float: none;
-			margin: 6px auto;
-			background: transparent;
-			color: $grey;
-			border: 2px solid $grey;
-			font-size: 20px;
-			font-weight: 500;
-			line-height: 76px;
-			height: 80px;
-			min-width: 220px;
+			background: $grey;
+			border-color: $grey;
+			text-transform: lowercase;
+			margin: 0 auto;
+			font-style: italic;
 			&:hover {
 				color: $white;
-				background: $blue;
-				border-color: $blue;
+				background: $red;
+				border-color: $red;
 			}
 		}
 
 		// error/success message; spinning arrows
 		.wpcf7-response-output, .ajax-loader {
+			width: 100%;
 			display: block;
 			margin: 0 auto;
 			text-align: center;
