@@ -15,26 +15,28 @@ function about_metaboxes() { global $cmb_pre;
     // 'parent_slug'  => 'themes.php',
   ) );
   
-  // Title
+  // Headline
   $intro_content->add_field( array(
-      'name'       => __( 'Page Title', 'cmb2' ),
-      'id'         => $cmb_pre . '404_title',
+      'name'       => __( 'Headline', 'cmb2' ),
+      'id'         => $cmb_pre . 'headline',
       'type'       => 'text',
-  ) );
-
-  // Subtitle
-  $intro_content->add_field( array(
-      'name'       => __( 'Subheader Text', 'cmb2' ),
-      'id'         => $cmb_pre . '404_subtitle',
-      'type'       => 'textarea_small',
+      'default'    => 'Home to New York’s largest shared open database',
   ) );
 
   // Content
   $intro_content->add_field( array(
-      'name'       => __( 'Body Content', 'cmb2' ),
-      'desc'       => 'Displays above Search box',
-      'id'         => $cmb_pre . '404_content',
-      'type'       => 'wysiwyg',
+      'name'       => __( 'Content', 'cmb2' ),
+      'id'         => $cmb_pre . 'content',
+      'type'       => 'textarea',
+      'default'    => 'NYC Open Data Week is a collaboration between NYC Open Data, BetaNYC, BureauBlank and the dynamic NYC civic tech community. We’re kicking off the week on International Open Data Day with School of Data (March 4th) and wrapping up with an Open Data for All Workshop at the NYC Parks Hamilton Fish Computer Resource Center (March 11th). Peruse the descriptions of these events and many others below and sign up!',
+  ) );
+
+  // Video
+  $intro_content->add_field( array(
+      'name'       => __( 'Video', 'cmb2' ),
+      'id'         => $cmb_pre . 'video',
+      'type'       => 'oembed',
+      'default'    => 'https://www.youtube.com/watch?v=pXU_GY7hjPc',
   ) );
 
 }

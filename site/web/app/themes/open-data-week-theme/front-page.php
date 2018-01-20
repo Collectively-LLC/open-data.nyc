@@ -1,16 +1,19 @@
 <div id="content">
 	<div class="container">
 
+		<?
+		$about = get_option('about_details');
+		?>
 		<div class="row section-about justify-content-between align-items-center">
 			<div class="col-xl-12">
 				<h2 class="section_title red text-center font-weight-light text-uppercase circles-above">About Us</h2>
 			</div>
-			<div class="col-sm-12 col-md-6">
-				<h2 class="text-center font-weight-light">Home to New York’s largest shared open database</h2>
-				<h5 class="font-weight-light">NYC Open Data Week is a collaboration between NYC Open Data, BetaNYC, BureauBlank and the dynamic NYC civic tech community. We’re kicking off the week on International Open Data Day with School of Data (March 4th) and wrapping up with an Open Data for All Workshop at the NYC Parks Hamilton Fish Computer Resource Center (March 11th). Peruse the descriptions of these events and many others below and sign up!</h5>
+			<div class="info col-sm-12 col-md-6">
+				<h2 class="text-center font-weight-light"><?= $about[cmb_pre().'headline']; ?></h2>
+				<h5 class="font-weight-light"><?= $about[cmb_pre().'content']; ?></h5>
 			</div>
 			<div class="col-sm-12 col-md-5 md-push-1">
-				<?= wp_oembed_get( 'https://www.youtube.com/watch?v=pXU_GY7hjPc', array('width'=>800) ); ?>
+				<?= wp_oembed_get( $about[cmb_pre().'video'], array('width'=>800) ); ?>
 			</div>
 		</div>
 
