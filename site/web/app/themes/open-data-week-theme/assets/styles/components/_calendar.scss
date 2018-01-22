@@ -1,0 +1,244 @@
+#calendar {
+    position: relative;
+    display: flex;
+    padding: 20px 0 60px;
+
+    .row { 
+        width: 100%;
+    }
+
+// Elements  ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    .icon {
+        height: 36px;
+        width: 36px;
+        display: inline-block;
+        background-size: cover;
+        text-indent: -1000vw;
+        &:not(:hover) {
+            @extend .filter-black;
+        }
+        &.grid      { background-image: url('../images/toggle-grid.png');     }
+        &.list      { background-image: url('../images/toggle-list.png');     }
+        &.planner   { background-image: url('../images/toggle-planner.png');  }
+        &.social    { background-image: url('../images/share-via.png');       }
+        &.email     { background-image: url('../images/share-email.png');      }
+        &.print     { background-image: url('../images/share-print.png');      }
+        &.speaker   { background-image: url('../images/event-speaker.png');       }
+        &.panel     { background-image: url('../images/event-panel.png');      }
+        &.workshop  { background-image: url('../images/event-workshop.png');      }
+    }
+
+
+// Containers ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    .title {
+        order: 2;
+        @extend .col-md-6, .col-lg-6;
+        padding: 12px 0;
+        text-align: center;
+        h3 {
+            text-transform: uppercase;
+        }
+    }    
+
+    
+    .view_toggle {
+        order: 1;
+        @extend .col-md-3, .col-lg-2;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 12px 0;
+        font-size: 92%;
+        text-align: center;
+        .views {
+            word-spacing: 8px;
+        }
+    }    
+
+    .share_buttons {
+        @extend .col-md-3, .col-lg-2;
+        order: 3;
+        padding: 12px 0;
+    }
+
+    .filters {
+        @extend .col-md-12, .row, .justify-content-around;
+        order: 4;
+        max-width: 820px !important;
+        .filter {
+
+            &.list {
+                @extend .col-auto;
+                padding: 0;
+                a {
+                    @extend .button, .rounded; 
+                    background-color: $lightestgrey;
+                    border-color: $lightestgrey;
+                    color: $black;
+                    &:after {
+                        content: '\25BE';
+                        font-size: 28px;
+                        line-height: 16px;
+                        color: $grey;
+                        margin-left: 12px;
+                    }
+                    &:hover {
+                        color: $blue;
+                        border-color: $blue;
+                    }
+                }
+                ul {
+                    display: none; 
+                    li {
+
+                    }
+                }
+            }
+
+            &.icons {
+                @extend .col-auto;    
+                margin-top: 20px;
+                margin-bottom: 20px;
+                a {
+                    @extend .button;
+                    display: inline-block;
+                    color: $black !important;
+                    background-color: $transparent;
+                    border-color: $transparent;
+                    min-width: 100px;
+                    &:after { 
+                        content: ':';
+                    }
+                }     
+                ul { 
+                    display: inline-block;
+                    margin: 0; padding: 0;
+                    li { 
+                        display: inline-block; 
+                        font-weight: bold;
+                        margin: 0 12px;
+                        font-size: 15px;
+                        &:nth-of-type(4n+1) { color: $blue; @extend .speaker; }
+                        &:nth-of-type(4n+2) { color: $yellow; @extend .panel; }
+                        &:nth-of-type(4n+3) { color: $red; @extend .workshop; }
+                        &:before { 
+                            @extend .icon;
+                            content: '';
+                            display: inline-block; 
+                            vertical-align: middle;
+                            height: 36px;
+                            width: 36px;
+                            margin: 0 8px 0 0;
+                        }
+                    }
+                }
+            }    
+
+        }
+    }
+
+
+    .events {
+        @extend .col-md-12;
+        order: 5;
+        max-width: 896px;
+        height: 80vh;
+        max-height: 720px;
+        overflow-y: scroll;
+        position: relative;
+
+            .timeslots {
+                display: none;
+            }
+
+            .days {
+                @extend .col-md-12;
+                .day { 
+                    @extend .row, .col-md-12;
+                    .header {
+                        @extend .col-md-12;
+                    }
+                    .event {
+                        @extend .rounded;
+                        height: 162px;
+                        min-width: 181px;
+                        background: $lightergrey;
+                    }
+                }
+            }
+
+    }
+
+    // Event Views ////////////////////
+
+    // Planner
+        [data-view="planner"] .events {
+            .timeslots {
+                @extend .col-md-1;
+                text-align: right;
+                .timeslot {
+                    height: 162px;
+                }
+            }
+            .header {
+                color: $grey;
+                text-transform: uppercase;
+                text-align: center;
+                border-bottom: 5px solid $grey;
+                font-weight: bold;
+                height: 18px;
+                padding-bottom: 12px;
+                span {
+                    display: block;
+                    font-weight: normal;
+                }
+                &.time {
+                    border: none;
+                }
+            }
+            .days {
+                @extend .row, .col-md-11;
+                overflow-x: scroll; 
+                border-left: 5px solid $grey;
+                .day {
+                    @extend .col-md-3;
+                }         
+            }
+        }
+    
+    // Grid
+        [data-view="grid"] .events {
+            .event {
+                @extend .col-md-3;
+            }
+        }
+    
+    // List
+        [data-view="list"] .events {
+            .event {
+                @extend .col-md-12;
+                width: 100%;
+            }
+        }
+
+
+
+
+
+    .gapper {
+        display: none;
+        @extend .col-md-3;
+        order: 3;
+    }
+
+
+
+
+
+
+
+
+
+
+} // end #calendar

@@ -60,12 +60,6 @@ function news_meta() { global $cpt, $cmb_pre;
     'show_names'    => true, // Show field names on the left
   ) );
   
-  // Title
-  $custom_meta->add_field( array(
-    'name'       => __( 'Name', 'cmb2' ),
-    'id'         => $cmb_pre . 'name',
-    'type'       => 'text',
-  ) );
 // Article URL
   $custom_meta->add_field( array(
     'name'       => __( 'URL', 'cmb2' ),

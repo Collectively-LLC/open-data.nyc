@@ -1,140 +1,122 @@
 // Forms
 
-form {
+input, textarea {
+	display: inline-block;
+	@extend .rounded;
+	background: $white;
+	border: 2px solid $white;
+	color: $black;
+	vertical-align: middle;
+	font-size: 92%;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	&[type="text"] {
+		height: 42px;
+		line-height: 42px;
+		padding: 0 24px;
+	}
+	@at-root textarea {
+		padding: 12px 24px;
+		height: 196px;
+	}
+	&[type="submit"] {
+		@extend .button;
+	}
+	&:placeholder-shown {
+		font-style: italic;
+	}
+}
 
-	input, textarea {
-		display: inline-block;
-		@extend .rounded;
-		background: $white;
-		border: 2px solid $white;
-		color: $black;
-		vertical-align: middle;
-		font-size: 92%;
-		margin-top: 4px;
-		margin-bottom: 8px;
+
+&.one_field {
+	input {
+		margin-left: 12px;
+		margin-right: 12px;
 		&[type="text"] {
-			height: 42px;
-			line-height: 42px;
-			padding: 0 24px;
-		}
-		@at-root textarea {
-			padding: 12px 24px;
-			height: 196px;
-		}
-		&[type="submit"] {
-			background: $red;
-			color: $white;
-			font-weight: bold;
-			text-transform: uppercase;
-			border: 2px solid $red;
-			height: 42px;
-			line-height: 42px;
-			padding: 0 24px;
-			min-width: 200px;
-			cursor: pointer;
-			&:hover {
-				background: $white;
-				color: $red;
-			}
-		}
-		&:placeholder-shown {
-			font-style: italic;
-		}
-	}
-
-
-	&.one_field {
-		input {
-			margin-left: 12px;
-			margin-right: 12px;
-			&[type="text"] {
-				border-color: $grey;
-				width: calc(100% - 200px - 48px - 8px); // 100% - submit width - 12*2*2 padding - 2*2*2 borders
-				min-width: 280px;
-				font-weight: bold;
-				&:placeholder-shown {
-					color: $black;
-				}
-			}
-		}
-	}
-
-
-	&.wpcf7-form {
-		@extend .container;
-		max-width: 100%;
-		margin: 0 auto;
-		position: relative;
-		
-		p { 
-			@extend .row;
-			width: 100%;
-		}
-		
-		br {
-			display: none;
-		}
-
-		label {
-			font-size: 20px;
-			line-height: 24px;
-			height: 24px;
-			font-weight: 500;
-			color: $grey;
-			margin-bottom: 10px;
-		}
-
-		.wpcf7-form-control-wrap {
-			@extend .col-sm-12, .col-md-12, .col-lg-6;
-			margin-bottom: 28px;
-		}
-		input[type="text"], input[type="tel"], textarea {
-			width: 100%;
-		}
-
-		input[type="submit"] {
-			background: $grey;
 			border-color: $grey;
-			text-transform: lowercase;
-			margin: 0 auto;
-			font-style: italic;
-			&:hover {
-				color: $white;
-				background: $red;
-				border-color: $red;
+			width: calc(100% - 200px - 48px - 8px); // 100% - submit width - 12*2*2 padding - 2*2*2 borders
+			min-width: 280px;
+			font-weight: bold;
+			&:placeholder-shown {
+				color: $black;
 			}
 		}
+	}
+}
 
-		// error/success message; spinning arrows
-		.wpcf7-response-output, .ajax-loader {
-			width: 100%;
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-		}
-		// spinning arrow takes no space when hidden
-		.ajax-loader:not(.is-active) {
-			height: 0;
-		}
-		// success message
-		.wpcf7-response-output.wpcf7-mail-sent-ok {
-			position: absolute;
-			top:0;left:0;bottom:0;right:0;
-			background: white;
-			border: none;
-			font-size: 24px;
-			font-style: italic;
-			font-weight: 500;
-			display: flex !important;
-			align-items: center;
-		}
-		// field error messages
-		.wpcf7-not-valid-tip {
-			font-size: 16px;
-		}
 
+&.wpcf7-form {
+	@extend .container;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	
+	p { 
+		@extend .row;
+		width: 100%;
+	}
+	
+	br {
+		display: none;
 	}
 
+	label {
+		font-size: 20px;
+		line-height: 24px;
+		height: 24px;
+		font-weight: 500;
+		color: $grey;
+		margin-bottom: 10px;
+	}
+
+	.wpcf7-form-control-wrap {
+		@extend .col-sm-12, .col-md-12, .col-lg-6;
+		margin-bottom: 28px;
+	}
+	input[type="text"], input[type="tel"], textarea {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		background: $grey;
+		border-color: $grey;
+		text-transform: lowercase;
+		margin: 0 auto;
+		font-style: italic;
+		&:hover {
+			color: $white;
+			background: $red;
+			border-color: $red;
+		}
+	}
+
+	// error/success message; spinning arrows
+	.wpcf7-response-output, .ajax-loader {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	// spinning arrow takes no space when hidden
+	.ajax-loader:not(.is-active) {
+		height: 0;
+	}
+	// success message
+	.wpcf7-response-output.wpcf7-mail-sent-ok {
+		position: absolute;
+		top:0;left:0;bottom:0;right:0;
+		background: white;
+		border: none;
+		font-size: 24px;
+		font-style: italic;
+		font-weight: 500;
+		display: flex !important;
+		align-items: center;
+	}
+	// field error messages
+	.wpcf7-not-valid-tip {
+		font-size: 16px;
+	}
 
 }
 

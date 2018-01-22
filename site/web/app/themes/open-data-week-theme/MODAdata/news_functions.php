@@ -1,5 +1,5 @@
 <?php
-function moda_display_partners( $type='partners' ) {
+function moda_display_news( $type='news' ) {
 
 $slides = moda_get_items($type);
 if(count($slides)>0) {
@@ -20,7 +20,7 @@ foreach ($slides as $id => $slide) {
       <h6 class="font-weight-bold black text-uppercase"><?=get_the_title($id);?></h6>
       <p><?=$slidemeta[cmb_pre().'description'] ?></p>
       <?php if(array_key_exists(cmb_pre().'url',$slidemeta)) { ?>
-        <a href="<?=$slidemeta[cmb_pre().'url']?>" class="button rounded white"><?=get_the_title($id)?></a> 
+        <a href="<?=$slidemeta[cmb_pre().'url']?>" class="button rounded white"><?=$slidemeta[cmb_pre().'button']?></a> 
       <?php } ?>
     </div></div>
 

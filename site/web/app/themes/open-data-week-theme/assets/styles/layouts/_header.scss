@@ -1,14 +1,15 @@
 // Header : Branding / Navigation
 
 header.banner {
-	border-bottom: 1px solid $blue;
+	border-bottom: 2px solid $blue;
 	position: relative;
+	z-index: 999;
 	.row {
 		height: 88px;
 		
 		// Logo 
 		.brand {
-			width: 220px;
+			width: 231px;
 			height: auto;
 			display: block;
 			background-size: cover;
@@ -22,7 +23,7 @@ header.banner {
 
 		// Navigation
 		nav.navbar {
-			margin: 0 20px -20px;
+			margin: 0 20px -24px;
 			@media (min-width: $screen-lg-min) { 
 				display: block !important; 
 			}
@@ -41,17 +42,17 @@ header.banner {
 				.navbar-nav {
 					li {
 						display: inline-block;
-						margin: 0 20px;
+						margin: 0 18px;
 						a {
 							display: inline-block;
 							height: 52px;
-							line-height: 52px;
-							font-size: 20px;
+							line-height: 26px;
+							font-size: 22px;
 							font-weight: 100;
 							width: auto;
 							color: $white;
 							background: $blue;
-							padding: 0 16px;
+							padding: 10px 10px 16px;
 							text-align: center;
 							text-transform: uppercase;
 							border: 2px solid $transparent;

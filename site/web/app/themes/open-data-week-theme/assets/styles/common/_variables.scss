@@ -17,7 +17,7 @@
 	$red: #F34134;
 	$yellow: #FDC401;
 	// Greys
-	$grey: #969696;
+	$grey: #979797;
 	$lightgrey: #D7D7D7;
 	$lightergrey: #E3E3E3;
 	$lightestgrey: #F3F2F2;
@@ -51,8 +51,8 @@
 	.trans-bg {		background-color: $transparent; }
 
 // Fonts		
-	$brand-font:	sans-serif;
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+	$brand-font:	"Helvetica Neue","HelveticaNeue",sans-serif;
+	//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
 
 
 // Target All Headers via  --->  #{headings(1,6)}

@@ -51,8 +51,10 @@ $CMS = [
 // Events
   /*CPT*/   'MODAdata/events_cpt.php',
   /*Taxonomies*/   'MODAdata/events_taxonomies.php',
-  /*Functions*/   'MODAdata/events_functions.php',
-  /*Calendar*/   'MODAdata/calendar_template.php',
+  // Calendar 
+    /*Shell*/   'MODAdata/calendar_template.php',
+    /*Cards*/   'MODAdata/calendar_cards.php',
+    /*Filters*/   'MODAdata/calendar_filters.php',
 
 // Partners
   /*CPT*/   'MODAdata/partners_cpt.php',   
@@ -60,9 +62,13 @@ $CMS = [
 
 // News
   /*CPT*/   'MODAdata/news_cpt.php',
+  /*Display*/   'MODAdata/news_functions.php',
 
 // Sponsors
   /*CPT*/   'MODAdata/sponsors_cpt.php',
+
+// Newsletter
+  /*Form*/   'MODAdata/newsletter_form.php',
 
 // Footer
   /*Content*/   'MODAdata/footer_content.php',
@@ -81,15 +87,16 @@ unset($file, $filepath);
 
 
 
-// the_meta() - GET ALL THE META /////////////////////////////////////////////////////////////////////////////////////////////
-function _meta($title='',$prefix=true) {
-  if($prefix) { $title = cmbpre().$title; }
-  return get_post_meta(get_the_ID(),$title,true); 
+// GET META /////////////////////////////////////////////////////////////////////////////////////////////
+// Get Meta by Key
+function _meta($key='',$prefix=true) {
+  if($prefix) { $key = cmb_pre().$key; }
+  return get_post_meta(get_the_ID(),$key,true); 
 } 
 // Rescope entire array to second level, as in get_post_meta
 function array01($meta) { if(is_array($meta)) { foreach ($meta as &$v) { $v = array_shift($v); } return $meta; } else { return $meta; } }
 // Get Post Meta as a rescoped array
-function allmeta() { return array01(get_post_meta(get_the_id())); }
+function allmeta($postid) { if(!$postid){$postid=get_the_id();} return array01(get_post_meta($postid)); }
 
 
 
@@ -127,7 +134,7 @@ function getVideoId($url) {
 
 // Clean up YouTube oEmbeds
   function iweb_modest_youtube_player( $html, $url, $args ) {
-   return str_replace( '?feature=oembed', '?feature=oembed&enablejsapi=1showinfo=0&rel=0', $html );
+   return str_replace( '?feature=oembed', '?feature=oembed&enablejsapi=1&showinfo=0&rel=0', $html );
   }
   add_filter( 'oembed_result', 'iweb_modest_youtube_player', 10, 3 );
 

@@ -84,6 +84,8 @@
 ////
 jQuery(document).ready(function(){
 
+
+
   
   // Header animation
   jQuery('.custom-logo').hover(
@@ -130,15 +132,17 @@ jQuery(document).ready(function(){
 
 
 
-
-
-
 }); // End CUSTOM
 
 
 
-/* FitText.js 1.2 */
+
+
+
 (function( $ ){
+
+
+/* FitText.js 1.2 */
   $.fn.fitText = function( kompressor, options ) {
     // Setup options
     var compressor = kompressor || 1,
@@ -160,5 +164,63 @@ jQuery(document).ready(function(){
     });
   };
   $('.fittext').fitText();
+
+
+
+
+// Show mutliple Carousel items at once
+// https://www.codeply.com/go/s3I9ivCBYH
+$('.carousel-showmany').on('slide.bs.carousel', function (e) {
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction==="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
+
 })( jQuery );
 
+
+
+
+
+
+
+///////////////////////////////////////
+//// CALENDAR JS                   ////
+jQuery(document).ready(function(){ ////
+///////////////////////////////////////
+
+
+// View Toggle
+  jQuery('#calendar .view_toggle a').on('click', function(e) {
+    var newview = jQuery(this).attr('data-view');
+    jQuery('#calendar > .row').attr('data-view',newview);
+    e.preventDefault();
+    return false; 
+  });
+
+
+
+
+
+
+
+ 
+////////////////////////////////
+}); //// end CALENDAR JS ///////
+////////////////////////////////

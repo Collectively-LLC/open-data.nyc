@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09801d8a9c6e0be3023ad01815d6e097",
+    "content-hash": "7d851ce55680e76cd2940977bcd8a78c",
     "packages": [
         {
             "name": "composer/installers",
@@ -720,6 +720,26 @@
                 "standards"
             ],
             "time": "2017-12-19T21:44:46+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/fakerpress",
+            "version": "0.4.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fakerpress/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip?timestamp=1502140594",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fakerpress/"
         }
     ],
     "aliases": [],

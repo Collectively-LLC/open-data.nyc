@@ -40,10 +40,10 @@ if (wp_get_attachment_image_src( $custom_logo_id , 'full' )) {
 $intro = get_option('intro_details');
 ?>
 <div id="intro" class="section-intro row align-items-center">
-  <div class="container-fluid">
+  <div class="container-fluid circles-above circles-white circles-hig">
     <div class="container">
       <div class="row">
-        <h3 class="line one circles-above circles-white circles-high"><?= $intro[cmb_pre().'line_one']; ?></h3>
+        <h3 class="line one"><?= $intro[cmb_pre().'line_one']; ?></h3>
         <h3 class="line two"><?= $intro[cmb_pre().'line_two']; ?></h3>
         <h3 class="line three"><?= $intro[cmb_pre().'line_three']; ?></h3>
       </div>
