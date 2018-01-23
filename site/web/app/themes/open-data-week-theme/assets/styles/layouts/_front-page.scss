@@ -54,37 +54,14 @@ body {
 	margin-top: 128px;
 	margin-bottom: 68px;
 	padding: 48px 32px 64px;
-	.socialize {
-		padding-right: 40px;
-		h2 {
-			font-size: 53px;
-		}
-		.icon-grid {
-			padding: 16px 0;
-			div {
-				@extend .col-4, .col-sm-3, .col-md-4, .col-lg-3;
-				.circle {
-					margin-bottom: 28px;
-					margin-right: 8px;
-				}
-			}
-		}
-	}
+	max-width: 858px;
 	.contact {
 		padding: 12px 8px;
+		max-width: 565px;
 	}
 	@media (min-width: $screen-lg-min) {
 		padding-left: 64px;
 		padding-right: 64px;
-		.socialize {
-			flex: 0 0 48%;
-			max-width: 48%;
-		}
-		.contact {
-			flex: 0 0 52%;
-			max-width: 52%;
-		}
-
 	}
 }
 

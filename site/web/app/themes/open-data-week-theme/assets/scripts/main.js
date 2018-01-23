@@ -214,7 +214,31 @@ jQuery(document).ready(function(){ ////
     return false; 
   });
 
+// Filter List Toggle
+  jQuery('#calendar .filter .dropdown').on('click', function(e) {
+    jQuery(this).next('ul').slideToggle();
+    e.preventDefault();
+    return false; 
+  });
 
+
+// Filter Function
+  // Show / Hide Events
+    jQuery('#calendar .filter.list li').on('click', function(e) {
+      var filter_id = jQuery(this).attr('data-filter');
+      var option_id = jQuery(this).attr('data-option');
+      if(jQuery(this).hasClass('active')) {
+        jQuery(this).removeClass('active').addClass('inactive');
+        jQuery('#calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
+      }
+      else if(jQuery(this).hasClass('inactive')) {
+        jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
+        jQuery('#calendar .events').find('.event[data-'+filter_id+'="'+option_id+'"]').removeClass(filter_id+'-hidden');
+        jQuery('#calendar .events').find('.event:not([data-'+filter_id+'="'+option_id+'"])').addClass(filter_id+'-hidden');
+      }
+      e.preventDefault();
+      return false; 
+    });
 
 
 

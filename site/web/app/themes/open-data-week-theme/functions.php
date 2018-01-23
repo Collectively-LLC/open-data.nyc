@@ -153,7 +153,7 @@ function pretax($predefined_taxonomy,$predefined_terms) {
   );
   foreach ($predefined_terms as $term) {
     wp_insert_term($term, $predefined_taxonomy, array(
-        'slug' => strtolower(str_replace(' ','-',$term)),
+        'slug' => strtolower(str_replace(' ','-',str_replace(',','',$term))),
     ));
   }
   foreach ( $all_terms_inside_tax as $term ) {

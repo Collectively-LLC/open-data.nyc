@@ -1,5 +1,36 @@
 <?php
 
+  // Day Taxonomy /////////////////////////////////////////////////////////////////////////////////////////////
+  register_taxonomy(
+    'date',
+    'events',
+    array(
+      'label' => __( 'Date' ),
+      'rewrite' => array( 'slug' => 'date' ),
+      'hierarchical' => true,
+      'capabilities'      => array(
+        'assign_terms' => 'manage_options',
+        'edit_terms'   => 'god',
+        'manage_terms' => 'god',
+      ),      
+    )
+  );
+    // Predefine Categories
+    $predefined_terms = array(
+      'Saturday, March 3'
+      ,'Sunday, March 4'
+      ,'Monday, March 5'
+      ,'Tuesday, March 6'
+      ,'Wednesday, March 7'
+      ,'Thursday, March 8'
+      ,'Friday, March 9'
+      ,'Saturday, March 10'
+    );
+    $predefined_taxonomy = 'date';
+    pretax($predefined_taxonomy,$predefined_terms);
+
+
+
   // Type Taxonomy /////////////////////////////////////////////////////////////////////////////////////////////
   register_taxonomy(
     'event_type',
@@ -17,9 +48,15 @@
   );
     // Predefine Categories
     $predefined_terms = array(
-       'Speaker'
+      'Workshop'
       ,'Panel'
-      ,'Workshop'
+      ,'Demo'
+      ,'Tour'
+      ,'Conference'
+      ,'Showcase'
+      ,'Community Gathering'
+      ,'Virtual Engagement'
+      ,'Reception'      
     );
     $predefined_taxonomy = 'event_type';
     pretax($predefined_taxonomy,$predefined_terms);

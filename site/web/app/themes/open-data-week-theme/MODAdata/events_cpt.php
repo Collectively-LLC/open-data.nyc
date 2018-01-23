@@ -47,13 +47,32 @@ function events_meta() { global $cpt, $cmb_pre;
     'priority'      => 'high',
     'show_names'    => true, // Show field names on the left
   ) );
-  
-  // Eventbrite ID
+
+
+
+// Timeslot
   $custom_meta->add_field( array(
-    'name'       => __( 'Eventbrite ID', 'cmb2' ),
-    'id'         => $cmb_pre . 'eventbrite_id',
-    'type'       => 'text',
+    'name' => 'Start Time',
+    'id'   => $cmb_pre.'time_start',
+    'type' => 'text_time',
+    'time_format' => 'g:i a',
   ) );
+  $custom_meta->add_field( array(
+    'name' => 'End Time',
+    'id'   => $cmb_pre.'time_end',
+    'type' => 'text_time',
+    'time_format' => 'g:i a',
+  ) );
+
+// Summary
+  $custom_meta->add_field( array(
+    'name' => 'Event Summary',
+    'id'   => $cmb_pre.'summary',
+    'type' => 'textarea',
+  ) );
+
+
+  
 // Partner Organization
   $custom_meta->add_field( array(
     'name'    => __( 'Hosting Partner', 'cmb2' ),
@@ -83,6 +102,12 @@ function events_meta() { global $cpt, $cmb_pre;
   ) );
   
   // Eventbrite ID
+  $eventbrite->add_field( array(
+    'name'       => __( 'Eventbrite ID', 'cmb2' ),
+    'id'         => $cmb_pre . 'eventbrite_id',
+    'type'       => 'text',
+  ) );
+  // Eventbrite Info
   $eventbrite->add_field( array(
     'id'         => 'eventbrite_date',
     'type'       => 'title',

@@ -36,6 +36,13 @@
 		</div>
 	</div>
 
+	<div class="row section-socialize lightestgrey-bg circles-above circles-high justify-content-center">
+		<div class="contact col-sm-12 col-md-12 yellow-bg rounded">			
+			<h3 class="white text-center">Drop us a line.</h3>
+			<?=do_shortcode('[contact-form-7 id="23" title="Contact form 1"]');?>
+		</div>
+	</div>
+
 	<div class="row section-news">
 		<div class="container blue-bg">
 			<div class="col-xl-12">
@@ -44,27 +51,6 @@
 			<div class="col-xl-12">
 				<?=moda_display_news();?>
 			</div>
-		</div>
-	</div>
-
-	<div class="row section-socialize lightestgrey-bg circles-above circles-high">
-		<div class="socialize col-sm-12 col-md-7 col-lg-6">
-			<h2 class="font-weight-light">Socialize with data.</h2>
-			<h5>Log in to see who is attending, share your calendar, &amp; invite some friends to join you</h5>
-			<div class="row icon-grid">
-				<div><a class="circle" style="background-image: url('http://placekitten.com/88/88');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/99/99');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/111/80');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/112/80');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/113/80');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/114/80');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/120/80');" /></a></div>
-				<div><a class="circle" style="background-image: url('http://placekitten.com/180/160');" /></a></div>
-			</div>
-		</div>
-		<div class="contact col-sm-12 col-md-5 col-lg-6 yellow-bg rounded">			
-			<h3 class="white text-center">Drop us a line.</h3>
-			<?=do_shortcode('[contact-form-7 id="23" title="Contact form 1"]');?>
 		</div>
 	</div>
 
