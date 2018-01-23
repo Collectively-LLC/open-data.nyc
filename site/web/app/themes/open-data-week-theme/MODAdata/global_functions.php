@@ -7,3 +7,10 @@ function moda_get_items($type='post',$orderby=array( 'menu_order' => 'ASC', 'dat
     }
     if(isset($items)) { return $items; }   // Return array of sponsor IDs 
 }
+
+// Get Eventbrite ID from URL
+function eb_event_id($url) {
+	$event_id = array_pop(explode('-',$url));
+	$event_id = array_shift(explode('?',$event_id));
+	return $event_id;
+}

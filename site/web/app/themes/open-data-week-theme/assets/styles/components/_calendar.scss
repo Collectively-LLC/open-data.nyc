@@ -357,6 +357,9 @@ font { display: none; }
     .modal {
         padding: 0;
     }
+    .modal-dialog {
+        max-width: 505px;
+    }
     .modal-content {
         border: 6px solid $yellow;
         padding: 18px 10px;
@@ -426,6 +429,10 @@ font { display: none; }
             &[data-option="reception"]:before { background-color: $forest; }            
         }
         a.register.button {
+            color: $white;
+            &:hover {
+                color: $red;
+            }
         }
     }
 

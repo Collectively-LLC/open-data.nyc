@@ -23,11 +23,12 @@
 			}
 			&.two {
 				font-size: 70px;
-				font-weight: 600;
+				font-weight: 500;
 			}
 			&.three {
 				font-size: 59px;
 				margin-bottom: 0;
+				font-weight: normal;
 			}
 			@media (max-width: $screen-md-max) {
 				&.one { font-size: 9vw; }
