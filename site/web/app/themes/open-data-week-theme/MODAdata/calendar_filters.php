@@ -25,19 +25,6 @@ $filters = array(
 					'Paid by Subsidy',
 				),
 );
-$key = array(
-	'Event Type' => array(
-					'Workshop'
-					,'Tour'
-					,'Community Gathering'
-					,'Panel'
-					,'Conference'
-					,'Virtual Engagement'
-					,'Demo'
-					,'Showcase'
-					,'Reception'      
-				),
-);
 
 foreach ($filters as $filter=>$options) {
 	$filter_id = str_replace(' ','-',strtolower($filter));
@@ -53,12 +40,34 @@ foreach ($filters as $filter=>$options) {
 	echo '</div>';
 }
 
+}
+
+
+
+
+function moda_calendar_key() {
+
+$key = array(
+	'Event Type' => array(
+					'Workshop'
+					,'Tour'
+					,'Community Gathering'
+					,'Panel'
+					,'Conference'
+					,'Virtual Engagement'
+					,'Demo'
+					,'Showcase'
+					,'Reception'      
+				),
+);
+
+
 foreach ($key as $filter=>$options) {
 	$filter_id = str_replace(' ','-',strtolower($filter));
 
 	echo '<div class="filter icons row" data-filter="'.$filter_id.'">';
-	echo '	<div class="col-sm-3"><a href="#">'.$filter.'</a></div>';
-	echo '	<ul class="col-sm-9 row">';
+	echo '	<div class="col-auto"><a href="#">'.$filter.'</a></div>';
+	echo '	<ul class="col-sm-12 col-md row">';
 	foreach($options as $option) {
 		$option_id = str_replace(' ','-',strtolower($option));
 		echo '	<li class="'.$filter_id.' col" data-filter="'.$filter_id.'" data-option="'.$option_id.'">'.$option.'</li>';
@@ -66,9 +75,6 @@ foreach ($key as $filter=>$options) {
 	echo '	</ul>';
 	echo '</div>';
 }
-
-
-
 
 
 }

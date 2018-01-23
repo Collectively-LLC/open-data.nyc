@@ -6,11 +6,16 @@ function moda_events_calendar( $atts=null ) {
 
 	
 <div id="calendar" class="container">
-<div class="row justify-content-center align-items-center" data-view="planner">
+<div class="row justify-content-center align-items-middle" data-view="grid">
 
 	<div class="calendar_header">
 		<h3 class="font-weight-bold text-transform-uppercase">Discover Open Data in NYC</h3>
 		<h6 class="black">Schedule Your 2018 NYC Open Data Week activities here</h6>
+	</div>
+
+	<!-- Filters -->
+	<div class="filters">
+		<?=moda_calendar_filters();?>
 	</div>
 
 	<!-- View Toggle -->
@@ -23,6 +28,10 @@ function moda_events_calendar( $atts=null ) {
 		</div>
 	</div>
 
+	<!-- Key -->
+	<div class="key">
+		<?=moda_calendar_key();?>
+	</div>
 
 	<!-- Share Buttons -->
 	<div class="share_buttons">
@@ -33,11 +42,6 @@ function moda_events_calendar( $atts=null ) {
 		</div>
 	</div>
 
-
-	<!-- Filters -->
-	<div class="filters">
-		<?=moda_calendar_filters();?>
-	</div>
 
 	<!-- The Calendar -->
 	<div class="events">
