@@ -81,6 +81,7 @@
 		overflow: hidden;
 		background-size: cover;
 		background-color: $grey;
+		text-indent: -1000vw;
 		&:before {
 		    content: "";
 		    display: block;

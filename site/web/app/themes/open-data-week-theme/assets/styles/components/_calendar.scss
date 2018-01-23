@@ -32,19 +32,16 @@ font { display: none; }
 // Containers ////////////////////////////////////////////////////////////////////////////////////////////////////
 
     .calendar_header {
-        order: 2;
-        @extend .col-md-6, .col-lg-6;
+        order: 1;
+        @extend .col-md-12;
         padding: 12px 0;
         text-align: center;
-        h3 {
-            text-transform: uppercase;
-        }
     }    
 
     
     .view_toggle {
-        order: 1;
-        @extend .col-md-3, .col-lg-2;
+        order: 2;
+        @extend .col-md-6, .col-lg-2;
         text-transform: uppercase;
         font-weight: bold;
         padding: 12px 0;
@@ -56,15 +53,15 @@ font { display: none; }
     }    
 
     .share_buttons {
-        @extend .col-md-3, .col-lg-2;
-        order: 3;
+        @extend .col-md-6, .col-lg-2;
+        order: 4;
         padding: 12px 0;
         text-align: center;
     }
 
     .filters {
-        @extend .col-md-12, .row, .justify-content-around;
-        order: 4;
+        @extend .col-md-12, .col-lg-7, .row, .justify-content-around;
+        order: 3;
         max-width: 820px !important;
 
         .filter {
@@ -121,6 +118,7 @@ font { display: none; }
                     color: $black !important;
                     background-color: $transparent;
                     border-color: $transparent;
+                    min-width: 0;
                     &:after { 
                         content: ':';
                     }
@@ -167,7 +165,7 @@ font { display: none; }
         order: 5;
         max-width: 1200px;
         height: 80vh;
-        max-height: 720px;
+        max-height: 680px;
         overflow-y: scroll;
         position: relative;
         >.row { overflow: hidden; }
@@ -262,6 +260,7 @@ font { display: none; }
                 @extend .row;
                 flex-wrap: nowrap;
                 width: 1024px;
+                margin-left: 0 !important;
             }
 
             .timeslots {
@@ -270,6 +269,7 @@ font { display: none; }
                 padding-right: 0;
                 padding-left: 0;
                 z-index: 99;
+                margin-right: -6px !important;
                 .timeslot {
                     height: 182px;
                     border-right: 3px solid $grey;
@@ -314,9 +314,9 @@ font { display: none; }
                 overflow-x: scroll; 
                 border-bottom: 3px solid $grey;
                 padding: 0;
-                margin-left: -20px !important;
                 .day {
                     @extend .col-md-2, .align-content-start;
+                    flex: none;
                     width: 201px !important;
                     max-width: 201px !important;
                     padding-left: 0;
@@ -351,6 +351,86 @@ font { display: none; }
                 width: 100%;
             }
         }
+
+
+    // Event Info Modal
+    .modal {
+        padding: 0;
+    }
+    .modal-content {
+        border: 6px solid $yellow;
+        padding: 18px 10px;
+        border-radius: 0;
+        .close {
+            position: absolute;
+            top:0;
+            right:2px;
+            line-height: .5;
+            font-size: 40px;
+            color: $black;
+        }
+        h5 {
+            line-height: normal;
+            margin-bottom: 0;
+            &.title { 
+                font-weight: bold;
+                color: $red;
+            }
+            &.time { 
+                font-weight: 100;
+                color: $black;
+            }
+            &.borough { 
+                font-weight: 500;
+                color: $black;
+            }
+        }
+        .partners {
+            text-align: right;
+            .circle {
+                margin: 0 2px;
+                width: 63px;
+                background-color: transparent;
+                background-size: 72%;
+                background-position: 50%;
+                border: 1px solid $blue;
+            }
+        }
+        p.summary {
+            margin: 12px 0; 
+            font-size: 18px;
+            font-weight: 300;
+            line-height: normal;
+        }
+        .type {
+            text-align: left;
+            font-size: 15px;
+            line-height: 40px;
+            &:before { 
+                content: '';
+                display: inline-block;
+                height: 13px;
+                width: 17px;
+                margin-right: 5px;
+            }
+            // Event Types
+            &[data-option=""]:before { background-color: $grey; }
+            &[data-option="workshop"]:before { background-color: $blue; }
+            &[data-option="panel"]:before { background-color: $yellow; }
+            &[data-option="demo"]:before { background-color: $red; }
+            &[data-option="tour"]:before { background-color: $pink; }
+            &[data-option="conference"]:before { background-color: $green; }
+            &[data-option="showcase"]:before { background-color: $purple; }
+            &[data-option="community-gathering"]:before { background-color: $darkblue; }
+            &[data-option="virtual-engagement"]:before { background-color: $orange; }
+            &[data-option="reception"]:before { background-color: $forest; }            
+        }
+        a.register.button {
+        }
+    }
+
+
+
 
 
 

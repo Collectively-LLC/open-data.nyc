@@ -9,7 +9,7 @@ function moda_events_calendar( $atts=null ) {
 <div class="row justify-content-center align-items-center" data-view="planner">
 
 	<div class="calendar_header">
-		<h3 class="font-weight-bold text-transform-uppercase">Mine Your Own Data</h3>
+		<h3 class="font-weight-bold text-transform-uppercase">Discover Open Data in NYC</h3>
 		<h6 class="black">Schedule Your 2018 NYC Open Data Week activities here</h6>
 	</div>
 

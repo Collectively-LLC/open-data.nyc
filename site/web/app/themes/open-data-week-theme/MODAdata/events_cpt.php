@@ -71,6 +71,13 @@ function events_meta() { global $cpt, $cmb_pre;
     'type' => 'textarea',
   ) );
 
+// Register URL
+  $custom_meta->add_field( array(
+    'name' => 'Register URL',
+    'id'   => $cmb_pre.'register',
+    'type' => 'text_url',
+  ) );
+
 
   
 // Partner Organization
