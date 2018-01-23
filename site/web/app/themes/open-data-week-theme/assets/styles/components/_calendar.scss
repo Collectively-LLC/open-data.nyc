@@ -32,7 +32,7 @@
 
 // Containers ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    .title {
+    .calendar_header {
         order: 2;
         @extend .col-md-6, .col-lg-6;
         padding: 12px 0;
@@ -119,9 +119,15 @@
                         font-weight: bold;
                         margin: 0 12px;
                         font-size: 15px;
-                        &:nth-of-type(4n+1) { color: $blue; @extend .speaker; }
-                        &:nth-of-type(4n+2) { color: $yellow; @extend .panel; }
-                        &:nth-of-type(4n+3) { color: $red; @extend .workshop; }
+                        &:nth-of-type(1) { 
+                            color: $blue; @extend .speaker; 
+                        }
+                        &:nth-of-type(2) { 
+                            color: $yellow; @extend .panel; 
+                        }
+                        &:nth-of-type(3) { 
+                            color: $red; @extend .workshop;
+                        }
                         &:before { 
                             @extend .icon;
                             content: '';
@@ -147,68 +153,152 @@
         max-height: 720px;
         overflow-y: scroll;
         position: relative;
+        .days {
+            .day { 
+                @extend .row, .col-md-12;
+                .header {
+                    @extend .col-md-12;
+                    padding: 0 27px 0 27px;
+                }
+                .event {
+                    @extend .rounded;
+                    height: 162px;
+                    min-width: 181px;
+                    background: $lightestgrey;
+                    font-size: 15px;
+                    margin: 19px 20px 0px;
+                    padding: 6px 10px 2px;
 
-            .timeslots {
-                display: none;
-            }
-
-            .days {
-                @extend .col-md-12;
-                .day { 
-                    @extend .row, .col-md-12;
-                    .header {
-                        @extend .col-md-12;
+                    .title {
+                        font-size: 15px;
+                        display: block;
+                        width: 100%;
+                        font-weight: bold;
+                        line-height: 1;
+                        color: $black;
+                        height: 1em;
+                        overflow: hidden;
+                        line-height: 18px;
                     }
-                    .event {
-                        @extend .rounded;
-                        height: 162px;
-                        min-width: 181px;
-                        background: $lightergrey;
+                    .time {
+                        font-size: 15px;
+                        display: block;
+                        width: 100%;
+                        line-height: 1;
+                        font-weight: 300;
+                        line-height: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin: 32px auto;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    .icon {
+                        float: left;
+                        margin-left: 8px;
+                    }
+                    .button {
+                        float: right;
+                        max-width: 88px;
+                        min-width: 88px;
+                        width: 88px;
+                        height: 31px;
+                        display: inline-block;
+                        font-size: 13px;
+                        color: $white;
+                        background: $grey;
+                        border-color: $grey;
+                        text-transform: none;
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-top: 4px;
+                        margin-right: 8px;
+                        text-align: center;
                     }
                 }
             }
-
+        }
     }
 
     // Event Views ////////////////////
 
     // Planner
         [data-view="planner"] .events {
+            
+            .planwide {
+                @extend .row;
+                flex-wrap: nowrap;
+                width: 1024px;
+            }
+
             .timeslots {
                 @extend .col-md-1;
                 text-align: right;
+                margin-right: -6px;
+                padding-right: 0;
+                padding-left: 0;
+                z-index: 99;
                 .timeslot {
-                    height: 162px;
+                    height: 182px;
+                    border-right: 3px solid $grey;
+                    padding-right: 8px;
+                    padding-top: 4px;
+                    font-size: 14px;
+                    &:after {
+                        content: '';
+                        width: 770px;
+                        height: 1px;
+                        margin-top: 8px;
+                        margin-left: 18px;
+                        position: absolute;
+                        border-bottom: 1px dashed $grey;
+
+                    }
                 }
             }
             .header {
                 color: $grey;
                 text-transform: uppercase;
                 text-align: center;
-                border-bottom: 5px solid $grey;
+                border-bottom: 3px solid $grey;
                 font-weight: bold;
-                height: 18px;
-                padding-bottom: 12px;
+                font-size: 15px;
+                line-height: 18px;
+                padding: 0 5px 12px;
+                height: 50px;
                 span {
                     display: block;
                     font-weight: normal;
                 }
                 &.time {
                     border: none;
+                    margin-bottom: 0;
                 }
             }
             .days {
-                @extend .row, .col-md-11;
+                @extend .row, .align-items-start, .col-md-11;
                 overflow-x: scroll; 
-                border-left: 5px solid $grey;
+                border-bottom: 3px solid $grey;
+                padding: 0;
                 .day {
-                    @extend .col-md-3;
+                    @extend .col-md-2;
+                    width: 181px;
+                    max-width: 201px;
+                    padding-left: 0;
+                    padding-right: 0;
                 }         
             }
         }
     
     // Grid
         [data-view="grid"] .events {
+            .timeslots {
+                display: none;
+            }
+            .days {
+                @extend .col-md-12;
+            }
             .event {
                 @extend .col-md-3;
             }
@@ -216,6 +306,12 @@
     
     // List
         [data-view="list"] .events {
+            .timeslots {
+                display: none;
+            }
+            .days {
+                @extend .col-md-12;
+            }
             .event {
                 @extend .col-md-12;
                 width: 100%;
