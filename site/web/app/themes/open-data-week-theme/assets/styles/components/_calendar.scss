@@ -322,10 +322,21 @@ font { display: none; }
                 .day {
                     @extend .col-md-2, .align-content-start;
                     flex: none;
-                    width: 201px !important;
-                    max-width: 201px !important;
+                    width: auto !important;
+                    min-width: 201px !important;
+                    max-width: 100%;
                     padding-left: 0;
                     padding-right: 0;
+                    @extend .align-content-start;
+                    .timerow {
+                        height: 182px;
+                        width: 100%;
+                        overflow: visible;
+                    }
+                    .event { 
+                        max-width: 181px;
+                        display: inline-block;
+                    }
 /*
                     &[data-count='0'] {
                         height: 0px;
@@ -355,6 +366,9 @@ font { display: none; }
                         font-size: 16px;
                         padding: 8px 16px;
                         margin: 0;
+                    }
+                    .timerow { 
+                        display: inherit;
                     }
                     .event {
                         @extend .col-md-2;

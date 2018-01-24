@@ -55,6 +55,9 @@ $CMS = [
     /*Shell*/   'MODAdata/calendar_template.php',
     /*Cards*/   'MODAdata/calendar_cards.php',
     /*Filters*/   'MODAdata/calendar_filters.php',
+    // Modals
+      /*Events*/  'MODAdata/calendar_modal_events.php',
+      /*EBrite*/  'MODAdata/calendar_modal_eventbrite.php',
 
 // Partners
   /*CPT*/   'MODAdata/partners_cpt.php',   

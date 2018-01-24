@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-159.89.93.249
+opendataweek.docollectively.com
 
 [web]
-159.89.93.249
+opendataweek.docollectively.com
