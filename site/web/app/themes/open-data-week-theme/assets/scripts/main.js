@@ -223,19 +223,31 @@ jQuery(document).ready(function(){ ////
 
 
 // Filter Function
-  // Show / Hide Events
     jQuery('#calendar .filter.list li').on('click', function(e) {
+
+              console.log('THESE?????');
+
+// Get Filter Info
       var filter_id = jQuery(this).attr('data-filter');
       var option_id = jQuery(this).attr('data-option');
+
+      // Unfilter Events if Deselecting
       if(jQuery(this).hasClass('active')) {
         jQuery(this).removeClass('active').addClass('inactive');
         jQuery('#calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
       }
+      // Filter Events if Selecting
       else if(jQuery(this).hasClass('inactive')) {
         jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
         jQuery('#calendar .events').find('.event[data-'+filter_id+'="'+option_id+'"]').removeClass(filter_id+'-hidden');
         jQuery('#calendar .events').find('.event:not([data-'+filter_id+'="'+option_id+'"])').addClass(filter_id+'-hidden');
       }
+
+      // Count visible .event and assign class to .day to hide as needed
+      jQuery('#calendar .events .day').each(function() {
+        jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
+      });
+
       e.preventDefault();
       return false; 
     });
@@ -244,7 +256,6 @@ jQuery(document).ready(function(){ ////
 
 
 
- 
 ////////////////////////////////
 }); //// end CALENDAR JS ///////
 ////////////////////////////////

@@ -326,6 +326,14 @@ font { display: none; }
                     max-width: 201px !important;
                     padding-left: 0;
                     padding-right: 0;
+/*
+                    &[data-count='0'] {
+                        height: 0px;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        overflow: hidden;
+                    }
+*/
                 }         
             }
         }
@@ -351,6 +359,12 @@ font { display: none; }
                     .event {
                         @extend .col-md-2;
                         margin: 20px 10px 0;
+                    }
+                    &[data-count='0'] {
+                        height: 0px;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        overflow: hidden;
                     }
                 }
             }
@@ -378,6 +392,13 @@ font { display: none; }
                         @extend .col-md-12;
                         margin: 20px 10px 0;
                     }
+                    &[data-count='0'] {
+                        height: 0px;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        overflow: hidden;
+                    }
+
                 }
             }
         }        

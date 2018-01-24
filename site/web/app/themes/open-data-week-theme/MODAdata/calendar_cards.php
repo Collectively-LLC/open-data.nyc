@@ -55,9 +55,9 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 						$clean_date = strtolower(str_replace(' ','-',str_replace(',','',$date)));
 						if($post_date->slug==strtolower(str_replace(' ','-',str_replace(',','',$date)))) {
 							echo '<div class="event" data-type="'.$type->slug.'" data-borough="'.$borough->slug.'" data-date="'.$clean_date.'" data-cost="'.$cost->slug.'" data-event="'.$id.'">'
-									.'<span class="title">'.get_the_title( $id ).' </span>'
-									.'<span class="time">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].' </span>'
-									.'<span class="borough">'.$borough->name.' </span>'
+									.'<span class="title" data-toggle="modal" data-target="#details'.$id.'">'.get_the_title( $id ).' </span>'
+									.'<span class="time" data-toggle="modal" data-target="#details'.$id.'">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].' </span>'
+									.'<span class="borough" data-toggle="modal" data-target="#details'.$id.'">'.$borough->name.' </span>'
 									.'<a class="more" data-toggle="modal" data-target="#details'.$id.'">-Click for more details-</a>';
 							if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
 								echo '<a class="button rounded" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
