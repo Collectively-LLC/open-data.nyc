@@ -303,20 +303,17 @@ jQuery(document).ready(function(){ ////
           
           // for each above, check for overlap with current; if overlap is true, add class and try again
           var overlap = !(eventright < aboveleft ||  eventleft > aboveright || eventbottom < abovetop || eventtop > abovebottom);
-          var loop = 0;
           while(overlap){
             var push = parseInt(jQuery(event).attr('data-push'),10) + 1;
             jQuery(event).attr('data-push',push);
-                      // get thisevent coordinates
-                        var eventpos = jQuery(event).offset();
-                          var eventwidth = jQuery(event).width();
-                          var eventheight = jQuery(event).height();
-                          eventleft = eventpos.left;
-                            eventright = eventleft + eventwidth;
-                          eventtop = eventpos.top;
-                            eventbottom = eventtop + eventheight;
-
-            loop++;
+            // new get thisevent coordinates
+            var eventpos = jQuery(event).offset();
+              var eventwidth = jQuery(event).width();
+              var eventheight = jQuery(event).height();
+              eventleft = eventpos.left;
+                eventright = eventleft + eventwidth;
+              eventtop = eventpos.top;
+                eventbottom = eventtop + eventheight;
             overlap = !(eventright < aboveleft ||  eventleft > aboveright || eventbottom < abovetop || eventtop > abovebottom);
           }
         });
