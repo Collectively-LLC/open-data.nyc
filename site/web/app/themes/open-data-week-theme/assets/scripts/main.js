@@ -241,9 +241,7 @@ jQuery(document).ready(function(){ ////
 // Filter Function
     jQuery('#calendar .filter.list li').on('click', function(e) {
 
-              console.log('THESE?????');
-
-// Get Filter Info
+      // Get Filter Info
       var filter_id = jQuery(this).attr('data-filter');
       var option_id = jQuery(this).attr('data-option');
 
@@ -267,6 +265,68 @@ jQuery(document).ready(function(){ ////
       e.preventDefault();
       return false; 
     });
+
+
+// Push Cards for Planner View
+    jQuery('#calendar .event').each(function() {
+
+      // Declare current event 
+      var event = jQuery(this);
+          // get thisevent coordinates
+          var eventpos = jQuery(event).offset();
+            var eventwidth = jQuery(event).width();
+            var eventheight = jQuery(event).height();
+            eventleft = eventpos.left;
+              eventright = eventleft + eventwidth;
+            eventtop = eventpos.top;
+              eventbottom = eventtop + eventheight;
+
+      // Declare previous timerow events
+      var above1 = jQuery(this).parents('.timerow').prev().find('.event:visible');
+      var above2 = jQuery(this).parents('.timerow').prev().prev().find('.event:visible');
+      var above  = jQuery.merge(above2, above1);
+
+      // if there are events above
+      if(above.length > 0) {
+
+        // check for overlap with each above .event
+        above.each(function() {
+
+          // get thisabove coordinates
+          var abovepos = jQuery(this).offset();
+            var abovewidth = jQuery(this).width();
+            var aboveheight = jQuery(this).height();
+            aboveleft = abovepos.left;
+              aboveright = aboveleft + abovewidth;
+            abovetop = abovepos.top;
+              abovebottom = abovetop + aboveheight;
+          
+          // for each above, check for overlap with current; if overlap is true, add class and try again
+          var overlap = !(eventright < aboveleft ||  eventleft > aboveright || eventbottom < abovetop || eventtop > abovebottom);
+          var loop = 0;
+          while(overlap){
+            var push = parseInt(jQuery(event).attr('data-push'),10) + 1;
+            jQuery(event).attr('data-push',push);
+                      // get thisevent coordinates
+                        var eventpos = jQuery(event).offset();
+                          var eventwidth = jQuery(event).width();
+                          var eventheight = jQuery(event).height();
+                          eventleft = eventpos.left;
+                            eventright = eventleft + eventwidth;
+                          eventtop = eventpos.top;
+                            eventbottom = eventtop + eventheight;
+
+            loop++;
+            overlap = !(eventright < aboveleft ||  eventleft > aboveright || eventbottom < abovetop || eventtop > abovebottom);
+          }
+        });
+
+
+      }
+
+
+    });
+
 
 
 

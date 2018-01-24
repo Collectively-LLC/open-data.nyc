@@ -188,7 +188,7 @@ font { display: none; }
                     height: 162px;
                     min-width: 181px;
                     font-size: 15px;
-                    margin: 20px 20px 0px;
+                    margin: 20px 6px 0px ;
                     padding: 6px 10px 2px;
                     text-align: center;
                     &[class*="hidden"] {
@@ -336,6 +336,18 @@ font { display: none; }
                     .event { 
                         max-width: 181px;
                         display: inline-block;
+                        // Pushes
+                            &[data-push="1"] { margin-left: 199px; }
+                            &[data-push="2"] { margin-left: 392px; }
+                            &[data-push="3"] { margin-left: 585px; }
+                            &[data-push="4"] { margin-left: 778px; }
+                            &[data-push="5"] { margin-left: 971px; }
+                        &.duration {
+                            &-1-5   { height: 253px; }
+                            &-2     { height: 344px; }
+                            &-2-5   { height: 455px; }
+                            &-3     { height: 546px; }
+                        }
                     }
 /*
                     &[data-count='0'] {

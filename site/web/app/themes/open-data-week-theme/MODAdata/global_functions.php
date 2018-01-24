@@ -14,3 +14,13 @@ function eb_event_id($url) {
 	$event_id = array_shift(explode('?',$event_id));
 	return $event_id;
 }
+
+// Time Difference
+function time_diff($time1, $time2) {
+    $time1 = strtotime("1/1/1980 $time1");
+    $time2 = strtotime("1/1/1980 $time2");
+    if ($time2 < $time1) {
+        $time2 = $time2 + 86400;
+    }
+    return ($time2 - $time1) / 3600;    
+}  
