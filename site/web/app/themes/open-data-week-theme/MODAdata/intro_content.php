@@ -19,6 +19,7 @@ function intro_metaboxes() { global $cmb_pre;
     'One'=>'Welcome to'
     ,'Two'=>'NYC Open Data Week'
     ,'Three'=>'March 4-11 2018'
+    ,'Hashtag'=>'#nycopendata'
   );
 
   foreach ($lines as $line=>$default) {

@@ -11,33 +11,38 @@
 		text-align: center;
 		border-top: 4px solid $blue;
 		border-bottom: 4px solid $blue;
-
-		.line {
-			display: block;
-			width: 100%;
-			text-transform: uppercase;
-			line-height: 1.2;
-			&.one {
-				font-size: 123px;
-				font-weight: 100;
-			}
-			&.two {
-				font-size: 70px;
-				font-weight: 500;
-			}
-			&.three {
-				font-size: 59px;
-				margin-bottom: 0;
-				font-weight: normal;
-			}
-			@media (max-width: $screen-md-max) {
-				&.one { font-size: 9vw; }
-				&.two { font-size: 5.25vw; }
-				&.three { font-size: 4.75vw; }
-			}
-		}
-	
-
 	}
+
+	.line {
+		display: block;
+		width: 100%;
+		text-transform: uppercase;
+		line-height: 1.2;
+		&.one {
+			font-size: 123px;
+			font-weight: 100;
+		}
+		&.two {
+			font-size: 70px;
+			font-weight: 500;
+		}
+		&.three {
+			font-size: 59px;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		&.hashtag {
+			font-size: 50px;
+			font-weight: 300;
+			color: $white;
+			text-transform: none;
+		}
+		@media (max-width: $screen-md-max) {
+			&.one { font-size: 9vw; }
+			&.two { font-size: 5.25vw; }
+			&.three { font-size: 4.75vw; }
+		}
+	}
+
 
 }

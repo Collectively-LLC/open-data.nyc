@@ -40,6 +40,9 @@ if (wp_get_attachment_image_src( $custom_logo_id , 'full' )) {
 $intro = get_option('intro_details');
 ?>
 <div id="intro" class="section-intro row align-items-center">
+      <div class="row">
+        <h3 class="line hashtag">&nbsp;</h3>
+      </div>
   <div class="container-fluid circles-above circles-white circles-hig">
     <div class="container">
       <div class="row">
@@ -49,6 +52,9 @@ $intro = get_option('intro_details');
       </div>
     </div>
   </div>
+      <div class="row">
+        <h3 class="line hashtag"><?= $intro[cmb_pre().'line_hashtag']; ?></h3>
+      </div>
 </div>
 
 
