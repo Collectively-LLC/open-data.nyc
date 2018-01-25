@@ -60,7 +60,7 @@
 			<?php 	
 				$sponsors = moda_get_items('sponsors');
 				foreach($sponsors as $id=>$sponsor) {
-					echo '<a href="#"><img src="'.get_the_post_thumbnail_url( $id, 'medium' ).'" 
+					echo '<a href="'._meta('url',$id).'"><img src="'.get_the_post_thumbnail_url( $id, 'medium' ).'" 
 					alt="'.$sponsor->post_title.'" /></a>';
 				} 
 			?>

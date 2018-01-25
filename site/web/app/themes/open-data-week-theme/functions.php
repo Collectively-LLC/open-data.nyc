@@ -95,9 +95,10 @@ unset($file, $filepath);
 
 // GET META /////////////////////////////////////////////////////////////////////////////////////////////
 // Get Meta by Key
-function _meta($key='',$prefix=true) {
+function _meta($key='',$id='getid',$prefix=true) {
+  if($id=='getid') { $id = get_the_ID(); }
   if($prefix) { $key = cmb_pre().$key; }
-  return get_post_meta(get_the_ID(),$key,true); 
+  return get_post_meta($id,$key,true); 
 } 
 // Rescope entire array to second level, as in get_post_meta
 function array01($meta) { if(is_array($meta)) { foreach ($meta as &$v) { $v = array_shift($v); } return $meta; } else { return $meta; } }

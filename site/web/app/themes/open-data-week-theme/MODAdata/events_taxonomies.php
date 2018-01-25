@@ -113,3 +113,29 @@
     );
     $predefined_taxonomy = 'cost';
     pretax($predefined_taxonomy,$predefined_terms);
+
+
+
+  // Public/Private Taxonomy /////////////////////////////////////////////////////////////////////////////////////////////
+  register_taxonomy(
+    'invitation',
+    'events',
+    array(
+      'label' => __( 'Invitation' ),
+      'rewrite' => array( 'slug' => 'invitation' ),
+      'hierarchical' => true,
+      'capabilities'      => array(
+        'assign_terms' => 'manage_options',
+        'edit_terms'   => 'god',
+        'manage_terms' => 'god',
+      ),      
+    )
+  );
+    // Predefine Categories
+    $predefined_terms = array(
+       'Public'
+      ,'Private'
+    );
+    $predefined_taxonomy = 'invitation';
+    pretax($predefined_taxonomy,$predefined_terms);
+

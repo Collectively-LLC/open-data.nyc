@@ -250,10 +250,12 @@ jQuery(document).ready(function(){ ////
             eventright = eventleft + eventwidth;
           eventtop = eventpos.top;
             eventbottom = eventtop + eventheight;
+
       // Declare previous timerow events
       var above1 = jQuery(this).parents('.timerow').prev().find('.event:visible');
       var above2 = jQuery(this).parents('.timerow').prev().prev().find('.event:visible');
       var above  = jQuery.merge(above2, above1);
+
       // if there are events above
       if(above.length > 0) {
         // foreach above, check for overlap with current .event

@@ -98,6 +98,7 @@ function events_meta() { global $cpt, $cmb_pre;
   ) );
 
  
+/*
   // Display Eventbrite Data via API
   $eventbrite = new_cmb2_box( array(
     'id'            => 'eventbrite_meta',
@@ -120,7 +121,7 @@ function events_meta() { global $cpt, $cmb_pre;
     'type'       => 'title',
     'description'=> 'Eventbrite Info'
   ) );
-
+*/
 
 }
 

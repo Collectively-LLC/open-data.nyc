@@ -64,7 +64,7 @@ function sponsors_meta() { global $cpt, $cmb_pre;
   $custom_meta->add_field( array(
     'name'       => __( 'URL', 'cmb2' ),
     'id'         => $cmb_pre . 'url',
-    'type'       => 'text',
+    'type'       => 'text_url',
   ) );
 // Description
   $custom_meta->add_field( array(

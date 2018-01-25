@@ -261,7 +261,9 @@ font { display: none; }
     // Event Views ////////////////////
 
     // Planner
-        [data-view="planner"] .events {
+    [data-view="planner"] {
+        .views .icon.planner { filter: none !important; }
+        .events {
             .planwide {
                 @extend .row;
                 flex-wrap: nowrap;
@@ -363,6 +365,10 @@ font { display: none; }
                             &-7     { height: 1262px; }
                             &-7-5   { height: 1353px; }
                             &-8     { height: 1444px; }
+                            &-8-5   { height: 1535px; }
+                            &-9     { height: 1626px; }
+                            &-9-5   { height: 1717px; }
+                            &-10     { height: 1808px; }
                         }
                     }
 /*
@@ -376,9 +382,12 @@ font { display: none; }
                 }         
             }
         }
+    }
     
     // Grid
-        [data-view="grid"] .events {
+    [data-view="grid"] {
+        .views .icon.grid { filter: none !important; }
+        .events {
             .timeslots {
                 display: none;
             }
@@ -413,9 +422,12 @@ font { display: none; }
                 }
             }
         }
+    }
     
     // List
-        [data-view="list"] .events {
+    [data-view="list"] {
+        .views .icon.list { filter: none !important; }
+        .events {
             .timeslots {
                 display: none;
             }
@@ -450,7 +462,7 @@ font { display: none; }
                 }
             }
         }        
-
+    }
 
 
 
