@@ -30,12 +30,12 @@ foreach ($slides as $id => $slide) {
 ?>
 
   </div>
-  <a class="carousel-control-prev" href="#carousel<?=$type?>" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <a class="carousel-control carousel-control-prev" href="#carousel<?=$type?>" role="button" data-slide="prev">
+    <span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true">&#9664;</span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carousel<?=$type?>" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <a class="carousel-control carousel-control-next" href="#carousel<?=$type?>" role="button" data-slide="next">
+    <span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true">&#9654;</span>
     <span class="sr-only">Next</span>
   </a>
 </div>

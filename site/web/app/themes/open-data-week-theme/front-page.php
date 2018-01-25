@@ -30,9 +30,7 @@
 			<div class="col-xl-12">
 				<h2 class="section_title white text-center text-uppercase">Partners</h2>
 			</div>
-			<div class="col-xl-12">
-				<?=moda_display_partners();?>
-			</div>
+			<?=moda_display_partners();?>
 		</div>
 	</div>
 
@@ -48,9 +46,7 @@
 			<div class="col-xl-12">
 				<h2 class="section_title white text-center text-uppercase circles-above">Announcements</h2>
 			</div>
-			<div class="col-xl-12">
-				<?=moda_display_news();?>
-			</div>
+			<?=moda_display_news();?>
 		</div>
 	</div>
 

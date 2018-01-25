@@ -2,15 +2,19 @@
 	width: 100%;
 	overflow: hidden;
 	margin: 40px 0;
-	padding: 0 12px;
+	padding: 0;
 	z-index: 99;
 	.carousel-inner {
 		@extend .row;
+        width: 90%;
+        margin: 0 5%;
 		.carousel-item { 
 			@extend .col-md-4;
 			position: relative;
+            background: $white;
+            border-left: 10px solid $blue;
+            border-right: 10px solid $blue;
 			> div {
-				background: $white;
                 height: 100%;
 				margin: 0 12px;
 				padding: 0 16px 40px;
@@ -39,21 +43,32 @@
 					background-color: $blue !important;
 					border-color: $blue !important;
 					width: 100%;
-					max-width: 200px;
+					max-width: 100%;
+                    min-width: auto;
 					margin: 20px auto;
 					&:hover {
 						background-color: $white !important;
 						color: $blue !important;
-					}
-				}
+					} // button hover
+				} // button
+            } // .carousel-item>div
+		} // carousel-item
+	} // carousel-inner
+    
+    .carousel-control {
+        width: 5%;
+        background-image: none;
+        text-align: center;
+        .carousel-control-icon {
+            background: transparent;
+            width: 100%;
+            height: 52px;
+            font-size: 36px;
+        }
+    }
 
 
-
-
-			}
-		}
-	}
-}
+} // carousel-showmany
 
 
 
@@ -133,5 +148,10 @@
             margin: 0;
         }
     }
+
+    .carousel-control-icon {
+        font-size: 20px;
+    }
+
 
 }
