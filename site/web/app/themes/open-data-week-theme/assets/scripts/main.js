@@ -221,21 +221,6 @@ $('.carousel-showmany').on('slide.bs.carousel', function (e) {
 jQuery(document).ready(function(){ ////
 ///////////////////////////////////////
 
-// Calendar Views Toggle (ie:planner,list,grid)
-  jQuery('#moda_calendar .view_toggle a').on('click', function(e) {
-    var newview = jQuery(this).attr('data-view');
-    jQuery('#moda_calendar > .row').attr('data-view',newview);
-    e.preventDefault();
-    return false; 
-  });
-
-// Filter List Toggle (show/hide dropdown)
-  jQuery('#moda_calendar .filter .dropdown').on('click', function(e) {
-    jQuery(this).next('ul').slideToggle();
-    e.preventDefault();
-    return false; 
-  });
-
 // Push Cards for Planner View (push overlapping event cards)
   function pushcards() {
     jQuery('#moda_calendar .event').each(function() {
@@ -250,12 +235,8 @@ jQuery(document).ready(function(){ ////
             eventright = eventleft + eventwidth;
           eventtop = eventpos.top;
             eventbottom = eventtop + eventheight;
-
       // Declare previous timerow events
-      var above1 = jQuery(this).parents('.timerow').prev().find('.event:visible');
-      var above2 = jQuery(this).parents('.timerow').prev().prev().find('.event:visible');
-      var above  = jQuery.merge(above2, above1);
-
+      var above = jQuery(this).parents('.timerow').prevAll().find('.event:visible');
       // if there are events above
       if(above.length > 0) {
         // foreach above, check for overlap with current .event
@@ -287,8 +268,29 @@ jQuery(document).ready(function(){ ////
         }); // end foreach above
       } // end if there are above
     }); // end foreach event
+
+    // foreach row, scan for has event with data-push, and apply an attribute to that day 
+
   } // end function
   jQuery('#moda_calendar').ready(pushcards());
+
+
+// Calendar Views Toggle (ie:planner,list,grid)
+  jQuery('#moda_calendar .view_toggle a').on('click', function(e) {
+    var newview = jQuery(this).attr('data-view');
+    jQuery('#moda_calendar > .row').attr('data-view',newview);
+    pushcards();
+    e.preventDefault();
+    return false; 
+  });
+
+// Filter List Toggle (show/hide dropdown)
+  jQuery('#moda_calendar .filter .dropdown').on('click', function(e) {
+    jQuery(this).next('ul').slideToggle();
+    e.preventDefault();
+    return false; 
+  });
+
 
 
 // Filter Function
