@@ -273,15 +273,26 @@ jQuery(document).ready(function(){ ////
       // if has [data-push="6"], [data-wide="6"]
       // else if has [data-push="6"], [data-wide="6"]
 
-/*
+
       jQuery('#moda_calendar .events .timerow').each(function() {
         jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
       });
     
       jQuery('#moda_calendar .day').each(function(){
-          if(jQuery(this).has('[data-push="2"]')) { jQuery(this).css('background','red'); }
+
+              if(jQuery(this).find('[data-push="5"]').length > 0) { jQuery(this).attr('data-width','6'); }
+        else  if(jQuery(this).find('[data-count="6"]').length > 0) { jQuery(this).attr('data-width','6'); }
+        else  if(jQuery(this).find('[data-push="4"]').length > 0) { jQuery(this).attr('data-width','5'); }
+        else  if(jQuery(this).find('[data-count="5"]').length > 0) { jQuery(this).attr('data-width','5'); }
+        else  if(jQuery(this).find('[data-push="3"]').length > 0) { jQuery(this).attr('data-width','4'); }
+        else  if(jQuery(this).find('[data-count="4"]').length > 0) { jQuery(this).attr('data-width','5'); }
+        else  if(jQuery(this).find('[data-push="2"]').length > 0) { jQuery(this).attr('data-width','3'); }
+        else  if(jQuery(this).find('[data-count="3"]').length > 0) { jQuery(this).attr('data-width','3'); }
+        else  if(jQuery(this).find('[data-push="1"]').length > 0) { jQuery(this).attr('data-width','2'); }
+        else  if(jQuery(this).find('[data-count="2"]').length > 0) { jQuery(this).attr('data-width','2'); }
+
       });
-*/
+
 
   } // end function
   jQuery('#moda_calendar').ready(pushcards());

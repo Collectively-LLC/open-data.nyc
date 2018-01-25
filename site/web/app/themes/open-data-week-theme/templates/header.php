@@ -9,7 +9,7 @@ if (wp_get_attachment_image_src( $custom_logo_id , 'full' )) {
 <header class="banner">
   <div class="container">
     <div class="row align-items-center justify-content-between">
-      <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?=$logo_bg?>" alt="<?=get_bloginfo('name');?>" /></a>
+      <a class="brand" href="http://www.nyc.gov/opendata" target="_blank"><img src="<?=$logo_bg?>" alt="<?=get_bloginfo('name');?>" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar-collapse" aria-controls="main-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

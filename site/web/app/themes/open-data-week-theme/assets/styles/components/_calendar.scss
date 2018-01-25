@@ -348,16 +348,26 @@ font { display: none; }
                     @extend .col-md-2, .align-content-start;
                     flex: none;
                     width: auto !important;
-                    min-width: 201px !important;
+                    min-width: 181px !important;
                     max-width: 100%;
                     padding-left: 0;
                     padding-right: 0;
                     overflow-y: hidden;
                     @extend .align-content-start;
+                    // Column Width Fix
+                                        width: 191px !important;
+                    &[data-width="2"] { width: 392px !important;}
+                    &[data-width="3"] { width: 583px !important;}
+                    &[data-width="4"] { width: 583px !important;}
+                    &[data-width="5"] { width: 583px !important;}
+                    &[data-width="6"] { width: 583px !important;}
                     .timerow {
                         height: 182px;
                         width: 100%;
                         overflow: visible;
+                    }
+                    &+.day .timerow { 
+                        border-left: 1px dashed $grey;
                     }
                     .event { 
                         max-width: 181px;
