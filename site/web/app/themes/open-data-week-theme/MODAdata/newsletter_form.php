@@ -8,7 +8,7 @@ function moda_newsletter_form( ) { ?>
         <input type="submit" value="Subscribe" />
       </form>
 -->
-	<a href="https://www.surveymonkey.com/r/NYCOpenDataEmailSignUp" class="button rounded" style="max-width: 280px;margin:12px auto;">Subscribe</a>
+	<a href="https://www.surveymonkey.com/r/NYCOpenDataEmailSignUp" target="_blank" class="button rounded" style="max-width: 280px;margin:12px auto;">Subscribe</a>
 
 <?php } // end function  
 ?>
