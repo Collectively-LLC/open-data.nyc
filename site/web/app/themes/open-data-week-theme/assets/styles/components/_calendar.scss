@@ -389,6 +389,8 @@ font { display: none; }
                     .event {
                         @extend .col-md-2;
                         margin: 20px 10px 0;
+                        max-width: 181px !important;
+                        display: inline-block;
                     }
                     &[data-count='0'] {
                         height: 0px;
@@ -418,9 +420,13 @@ font { display: none; }
                         padding: 8px 16px;
                         margin: 0;
                     }
+                    .timerow {
+                        width: 100%;
+                    }
                     .event {
                         @extend .col-md-12;
                         margin: 20px 10px 0;
+                        width: 100%;
                     }
                     &[data-count='0'] {
                         height: 0px;

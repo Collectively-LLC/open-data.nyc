@@ -36,7 +36,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 				        </div>
 				    </div>
 			        <div class="col-md-12">
-			        	<p class="summary">This is the summary is this is the summary is this is the summary is this is the summary is this is the summary is this is the summary is this is the summary is this is the summary.</p>
+			        	<p class="summary">'.$allmeta[cmb_pre().'summary'].'</p>
 			        </div>
 					<div class="row justify-content-between">
 						<div class="col">
