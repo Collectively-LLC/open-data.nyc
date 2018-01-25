@@ -1,4 +1,4 @@
-#calendar {
+#moda_calendar {
     position: relative;
     display: flex;
     padding: 20px 0 60px;
@@ -192,7 +192,7 @@ font { display: none; }
                     padding: 6px 10px 2px;
                     text-align: center;
                     &[class*="hidden"] {
-                        display: none;
+                        display: none !important;
                     }
                     span {
                         font-size: 15px;
@@ -336,7 +336,11 @@ font { display: none; }
                     .event { 
                         max-width: 181px;
                         display: inline-block;
+                        position: relative;
                         // Pushes
+                            &.thirty { 
+                                top: 121px;
+                            }
                             &[data-push="1"] { margin-left: 199px; }
                             &[data-push="2"] { margin-left: 392px; }
                             &[data-push="3"] { margin-left: 585px; }
@@ -345,8 +349,8 @@ font { display: none; }
                         &.duration {
                             &-1-5   { height: 253px; }
                             &-2     { height: 344px; }
-                            &-2-5   { height: 455px; }
-                            &-3     { height: 546px; }
+                            &-2-5   { height: 445px; }
+                            &-3     { height: 526px; }
                         }
                     }
 /*
@@ -537,4 +541,4 @@ font { display: none; }
 
 
 
-} // end #calendar
+} // end #moda_calendar

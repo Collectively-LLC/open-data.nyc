@@ -221,77 +221,43 @@ $('.carousel-showmany').on('slide.bs.carousel', function (e) {
 jQuery(document).ready(function(){ ////
 ///////////////////////////////////////
 
-
-// View Toggle
-  jQuery('#calendar .view_toggle a').on('click', function(e) {
+// Calendar Views Toggle (ie:planner,list,grid)
+  jQuery('#moda_calendar .view_toggle a').on('click', function(e) {
     var newview = jQuery(this).attr('data-view');
-    jQuery('#calendar > .row').attr('data-view',newview);
+    jQuery('#moda_calendar > .row').attr('data-view',newview);
     e.preventDefault();
     return false; 
   });
 
-// Filter List Toggle
-  jQuery('#calendar .filter .dropdown').on('click', function(e) {
+// Filter List Toggle (show/hide dropdown)
+  jQuery('#moda_calendar .filter .dropdown').on('click', function(e) {
     jQuery(this).next('ul').slideToggle();
     e.preventDefault();
     return false; 
   });
 
-
-// Filter Function
-    jQuery('#calendar .filter.list li').on('click', function(e) {
-
-      // Get Filter Info
-      var filter_id = jQuery(this).attr('data-filter');
-      var option_id = jQuery(this).attr('data-option');
-
-      // Unfilter Events if Deselecting
-      if(jQuery(this).hasClass('active')) {
-        jQuery(this).removeClass('active').addClass('inactive');
-        jQuery('#calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
-      }
-      // Filter Events if Selecting
-      else if(jQuery(this).hasClass('inactive')) {
-        jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
-        jQuery('#calendar .events').find('.event[data-'+filter_id+'="'+option_id+'"]').removeClass(filter_id+'-hidden');
-        jQuery('#calendar .events').find('.event:not([data-'+filter_id+'="'+option_id+'"])').addClass(filter_id+'-hidden');
-      }
-
-      // Count visible .event and assign class to .day to hide as needed
-      jQuery('#calendar .events .day').each(function() {
-        jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
-      });
-
-      e.preventDefault();
-      return false; 
-    });
-
-
-// Push Cards for Planner View
-    jQuery('#calendar .event').each(function() {
-
+// Push Cards for Planner View (push overlapping event cards)
+  function pushcards() {
+    jQuery('#moda_calendar .event').each(function() {
+      jQuery(this).attr('data-push',0);
       // Declare current event 
       var event = jQuery(this);
-          // get thisevent coordinates
-          var eventpos = jQuery(event).offset();
-            var eventwidth = jQuery(event).width();
-            var eventheight = jQuery(event).height();
-            eventleft = eventpos.left;
-              eventright = eventleft + eventwidth;
-            eventtop = eventpos.top;
-              eventbottom = eventtop + eventheight;
-
+        // get thisevent coordinates
+        var eventpos = jQuery(event).offset();
+          var eventwidth = jQuery(event).width();
+          var eventheight = jQuery(event).height();
+          eventleft = eventpos.left;
+            eventright = eventleft + eventwidth;
+          eventtop = eventpos.top;
+            eventbottom = eventtop + eventheight;
       // Declare previous timerow events
       var above1 = jQuery(this).parents('.timerow').prev().find('.event:visible');
       var above2 = jQuery(this).parents('.timerow').prev().prev().find('.event:visible');
       var above  = jQuery.merge(above2, above1);
-
       // if there are events above
       if(above.length > 0) {
-
-        // check for overlap with each above .event
+        // foreach above, check for overlap with current .event
         above.each(function() {
-
           // get thisabove coordinates
           var abovepos = jQuery(this).offset();
             var abovewidth = jQuery(this).width();
@@ -300,9 +266,9 @@ jQuery(document).ready(function(){ ////
               aboveright = aboveleft + abovewidth;
             abovetop = abovepos.top;
               abovebottom = abovetop + aboveheight;
-          
-          // for each above, check for overlap with current; if overlap is true, add class and try again
+          // check for overlap between this above and this current
           var overlap = !(eventright < aboveleft ||  eventleft > aboveright || eventbottom < abovetop || eventtop > abovebottom);
+          // while there is overlap, add to the push-count and try again
           while(overlap){
             var push = parseInt(jQuery(event).attr('data-push'),10) + 1;
             jQuery(event).attr('data-push',push);
@@ -315,14 +281,44 @@ jQuery(document).ready(function(){ ////
               eventtop = eventpos.top;
                 eventbottom = eventtop + eventheight;
             overlap = !(eventright < aboveleft ||  eventleft > aboveright || eventbottom < abovetop || eventtop > abovebottom);
-          }
-        });
+          } // end overlap check
+        }); // end foreach above
+      } // end if there are above
+    }); // end foreach event
+  } // end function
+  jQuery('#moda_calendar').ready(pushcards());
 
 
+// Filter Function
+    jQuery('#moda_calendar .filter.list li').on('click', function(e) {
+
+      // Get Filter Info
+      var filter_id = jQuery(this).attr('data-filter');
+      var option_id = jQuery(this).attr('data-option');
+
+      // Unfilter Events if Deselecting
+      if(jQuery(this).hasClass('active')) {
+        jQuery(this).removeClass('active').addClass('inactive');
+        jQuery('#moda_calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
+      }
+      // Filter Events if Selecting
+      else if(jQuery(this).hasClass('inactive')) {
+        jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
+        jQuery('#moda_calendar .events').find('.event[data-'+filter_id+'="'+option_id+'"]').removeClass(filter_id+'-hidden');
+        jQuery('#moda_calendar .events').find('.event:not([data-'+filter_id+'="'+option_id+'"])').addClass(filter_id+'-hidden');
       }
 
+      // Count visible .event and assign class to .day to hide as needed
+      jQuery('#moda_calendar .events .day').each(function() {
+        jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
+      });
 
+      pushcards();
+      e.preventDefault();
+      return false; 
     });
+
+
 
 
 

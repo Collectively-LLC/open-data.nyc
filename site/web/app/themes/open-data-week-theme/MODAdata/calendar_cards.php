@@ -59,6 +59,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 								$post_date = wp_get_post_terms( $id, 'date')[0];
 								if($post_date->slug==strtolower(str_replace(' ','-',str_replace(',','',$date))) && $allmeta[cmb_pre().'time_start'] == $timerow) {
 									// CARD VARIABLES
+									if(strpos( $allmeta[cmb_pre().'time_start'] , ':30' )) { $thirty = 'thirty'; } else { $thirty = ''; }
 									$time_diff = time_diff($allmeta[cmb_pre().'time_start'],$allmeta[cmb_pre().'time_end']);
 										$duration = 'duration-'.str_replace('.','-',$time_diff);
 									$type = wp_get_post_terms( $id, 'event_type')[0];
@@ -66,7 +67,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 									$cost = wp_get_post_terms( $id, 'cost')[0];
 									$clean_date = strtolower(str_replace(' ','-',str_replace(',','',$date)));
 									// CARD OUTPUT
-									echo '<div class="event '.$duration.'" data-type="'.$type->slug.'" data-borough="'.$borough->slug.'" data-date="'.$clean_date.'" data-cost="'.$cost->slug.'" data-event="'.$id.'" data-push="0">'
+									echo '<div class="event '.$duration.' '.$thirty.'" data-type="'.$type->slug.'" data-borough="'.$borough->slug.'" data-date="'.$clean_date.'" data-cost="'.$cost->slug.'" data-event="'.$id.'" data-push="0">'
 											.'<span class="title" data-toggle="modal" data-target="#details'.$id.'">'.get_the_title( $id ).' </span>'
 											.'<span class="time" data-toggle="modal" data-target="#details'.$id.'">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].' </span>'
 											.'<span class="borough" data-toggle="modal" data-target="#details'.$id.'">'.$borough->name.' </span>'
