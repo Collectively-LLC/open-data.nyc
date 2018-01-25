@@ -70,7 +70,7 @@
 	<div id="connect" class="row section-coordinate circle-bg justify-content-center">
 		<h5 class="rounded blurb text-center white-bg circles-above circles-high">
 			Interested in putting on an event or adding your existing event to our list?<br />
-			<a href="#"><strong>Click here</strong> to email our coordinator</a>.
+			<a href="mailto:aschmoeker@analytics.nyc.gov"><strong>Email: aschmoeker@analytics.nyc.gov</strong></a>.
 		</h5>
 		<div class="newsletter col-xl-12 text-center">
 			<h4 class="text-uppercase"><strong>Stay up to date on all things NYC Open Data</strong></h4>

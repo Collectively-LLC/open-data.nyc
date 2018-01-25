@@ -32,6 +32,7 @@ input, textarea {
 	input {
 		margin-left: 12px;
 		margin-right: 12px;
+		display: inline-block !important;
 		&[type="text"] {
 			border-color: $grey;
 			width: calc(100% - 200px - 48px - 8px); // 100% - submit width - 12*2*2 padding - 2*2*2 borders
