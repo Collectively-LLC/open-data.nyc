@@ -34,19 +34,19 @@
 		</div>
 	</div>
 
-	<div id="contact" class="row section-socialize lightestgrey-bg circles-above circles-high justify-content-center">
-		<div class="contact col-sm-12 col-md-12 yellow-bg rounded">			
-			<h3 class="white text-center">Drop us a line.</h3>
-			<?=moda_contact_form();?>
-		</div>
-	</div>
-
 	<div id="news" class="row section-news">
 		<div class="container blue-bg">
 			<div class="col-xl-12">
 				<h2 class="section_title white text-center text-uppercase circles-above">Announcements</h2>
 			</div>
 			<?=moda_display_news();?>
+		</div>
+	</div>
+
+	<div id="contact" class="row section-socialize lightestgrey-bg circles-above circles-high justify-content-center">
+		<div class="contact col-sm-12 col-md-12 yellow-bg rounded">			
+			<h3 class="white text-center">Drop us a line.</h3>
+			<?=moda_contact_form();?>
 		</div>
 	</div>
 
