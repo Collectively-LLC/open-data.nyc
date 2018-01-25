@@ -6,7 +6,7 @@ function moda_events_calendar( $atts=null ) {
 
 	
 <div id="moda_calendar" class="container">
-<div class="row justify-content-center align-items-middle" data-view="planner">
+<div class="row justify-content-center align-items-middle" data-view="grid">
 
 	<div class="calendar_header">
 		<h3 class="font-weight-bold text-transform-uppercase">Discover Open Data in NYC</h3>
