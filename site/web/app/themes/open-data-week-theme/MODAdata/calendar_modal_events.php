@@ -15,8 +15,10 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 		$clean_date = strtolower(str_replace(' ','-',str_replace(',','',$date)));
 		$partners = unserialize($allmeta[cmb_pre().'attached_partners']);
 			$partner_list = '';
-		foreach ($partners as $partner) { 
-			$partner_list .= '<a href="'.get_post_meta($partner,cmb_pre().'url',true).'" target="_blank" class="circle" style="background-image: url(\''.get_the_post_thumbnail_url( $partner, 'small' ).'\')" title="'.get_the_title($partner).'"></a>';
+		if(count($partners)>0) {
+			foreach ($partners as $partner) { 
+				$partner_list .= '<a href="'.get_post_meta($partner,cmb_pre().'url',true).'" target="_blank" class="circle" style="background-image: url(\''.get_the_post_thumbnail_url( $partner, 'small' ).'\')" title="'.get_the_title($partner).'"></a>';
+			}
 		}
 
 		echo '<div class="modal fade" id="details'.$id.'" tabindex="-1" role="dialog" aria-hidden="true">
