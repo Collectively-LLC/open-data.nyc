@@ -367,7 +367,7 @@ font { display: none; }
                         overflow: visible;
                     }
                     &+.day .timerow { 
-                        border-left: 1px dashed $grey;
+                        border-left: 1px dashed $lightergrey;
                     }
                     .event { 
                         max-width: 181px;
