@@ -8,10 +8,11 @@ if($events) {
 
 // Set Values
 	// first start time to last end time
-	$timespan = array('9','21'); 
+	$timespan = array('9','24'); 
 
 	// event days
 	$days = array(
+		'Friday, March 2',
 		'Saturday, March 3',
 		'Sunday, March 4',
 		'Monday, March 5',
@@ -58,7 +59,13 @@ if($events) {
 							foreach ($events as $id => $event) {
 								$allmeta = allmeta($id);
 								$post_date = wp_get_post_terms( $id, 'date')[0];
+
+
+// FIX UP THE MECHANISM THAT SHOWS CARDS AT TIME
 								if($post_date->slug==strtolower(str_replace(' ','-',str_replace(',','',$date))) && $allmeta[cmb_pre().'time_start'] == $timerow) {
+
+
+
 									// CARD VARIABLES
 									if(strpos( $allmeta[cmb_pre().'time_start'] , ':30' )) { $thirty = 'thirty'; } else { $thirty = ''; }
 									$time_diff = time_diff($allmeta[cmb_pre().'time_start'],$allmeta[cmb_pre().'time_end']);

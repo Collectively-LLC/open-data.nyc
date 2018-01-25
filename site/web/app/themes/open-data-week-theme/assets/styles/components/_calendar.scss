@@ -267,6 +267,7 @@ font { display: none; }
                 flex-wrap: nowrap;
                 width: 1024px;
                 margin-left: 0 !important;
+                overflow-y: auto;
             }
             .timeslots {
                 @extend .col-md-1;
@@ -327,6 +328,7 @@ font { display: none; }
                     max-width: 100%;
                     padding-left: 0;
                     padding-right: 0;
+                    overflow-y: hidden;
                     @extend .align-content-start;
                     .timerow {
                         height: 182px;
