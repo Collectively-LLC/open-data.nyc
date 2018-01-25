@@ -355,7 +355,7 @@ font { display: none; }
                     overflow-y: hidden;
                     @extend .align-content-start;
                     // Column Width Fix
-                                        width: 191px !important;
+                                        width: 194px !important;
                     &[data-width="2"] { width: 392px !important;}
                     &[data-width="3"] { width: 583px !important;}
                     &[data-width="4"] { width: 583px !important;}
