@@ -59,6 +59,11 @@
 	h5 { font-size: 24px; }
 	h6 { font-size: 15px; line-height: 18px; font-weight: 500; }
 
+
+// Modals on Mobile Safari apparently //////////////////////////////////////////
+	[data-toggle="modal"] { cursor: pointer; }
+
+
 // Standardized Features //////////////////////////////////////////
 
 	.blue-border {

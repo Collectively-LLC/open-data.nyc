@@ -126,6 +126,11 @@ input, textarea {
  input[type="email"] { @extend input[type="text"]; }
 
 
+// Screen Door Email Form
+.fr_form * {max-width: 100%;}
+
+
+
 
 // Search form
 .search-form {

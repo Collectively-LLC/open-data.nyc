@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  opendataweek.docollectively.com:
+  159.89.93.249:
     site_hosts:
-      - canonical: opendataweek.docollectively.com
+      - canonical: 159.89.93.249
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
