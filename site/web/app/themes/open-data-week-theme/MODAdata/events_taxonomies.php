@@ -17,7 +17,8 @@
   );
     // Predefine Categories
     $predefined_terms = array(
-      'Saturday, March 3'
+      'Friday, March 2'
+      ,'Saturday, March 3'
       ,'Sunday, March 4'
       ,'Monday, March 5'
       ,'Tuesday, March 6'
