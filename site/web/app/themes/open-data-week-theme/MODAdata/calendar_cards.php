@@ -4,6 +4,7 @@ function moda_calendar_cards() {
 
 // Get events
 $events = moda_get_items('events',array( 'date' => 'ASC'));
+if($events) {
 
 // Set Values
 	// first start time to last end time
@@ -109,7 +110,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 
 
 <?php 
-
+}// if events
 }
 
 ?>
