@@ -3,15 +3,15 @@
 	<?
 	$about = get_option('about_details');
 	?>
-	<div id="about" class="row section-about justify-content-between align-items-center">
+	<div id="about" class="row section-about justify-content-around align-items-center">
 		<div class="col-xl-12">
 			<h2 class="section_title red text-center text-uppercase circles-above">About Us</h2>
 		</div>
 		<div class="info col-sm-12 col-md-6">
 			<h2 class="text-center font-weight-light"><?= $about[cmb_pre().'headline']; ?></h2>
-			<h5 class="font-weight-light"><?= $about[cmb_pre().'content']; ?></h5>
+			<h5 class="font-weight-light"><?= wpautop( $about[cmb_pre().'content'] ); ?></h5>
 		</div>
-		<div class="col-sm-12 col-md-5 md-push-1">
+		<div class="col-sm-12 col-md-4">
 			<img src="<?= $about[cmb_pre().'graphic']; ?>" alt="" />
 		</div>
 	</div>
