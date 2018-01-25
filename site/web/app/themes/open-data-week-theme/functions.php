@@ -71,7 +71,7 @@ $CMS = [
   /*CPT*/   'MODAdata/sponsors_cpt.php',
 
 // Contact 
-  /*Form*/   'MODAdata/contact_form.php',
+  ///*Form*/   'MODAdata/contact_form.php',
 
 // Newsletter
   /*Form*/   'MODAdata/newsletter_form.php',
