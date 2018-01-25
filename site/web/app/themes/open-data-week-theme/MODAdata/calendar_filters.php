@@ -51,13 +51,13 @@ $key = array(
 	'Event Type' => array(
 					'Workshop'
 					,'Tour'
-					,'Community Gathering'
+					,'Portal Demo'
 					,'Panel'
 					,'Conference'
-					,'Virtual Engagement'
-					,'Demo'
+					,'Community Gathering'
 					,'Showcase'
 					,'Reception'      
+					,'Virtual Engagement'					
 				),
 );
 

@@ -46,7 +46,7 @@
 	<div id="news" class="row section-news">
 		<div class="container blue-bg">
 			<div class="col-xl-12">
-				<h2 class="section_title white text-center text-uppercase circles-above">Open Data News</h2>
+				<h2 class="section_title white text-center text-uppercase circles-above">Announcements</h2>
 			</div>
 			<div class="col-xl-12">
 				<?=moda_display_news();?>

@@ -51,13 +51,13 @@
     $predefined_terms = array(
       'Workshop'
       ,'Panel'
-      ,'Demo'
       ,'Tour'
       ,'Conference'
       ,'Showcase'
+      ,'Reception'      
+      ,'Portal Demo'
       ,'Community Gathering'
       ,'Virtual Engagement'
-      ,'Reception'      
     );
     $predefined_taxonomy = 'event_type';
     pretax($predefined_taxonomy,$predefined_terms);

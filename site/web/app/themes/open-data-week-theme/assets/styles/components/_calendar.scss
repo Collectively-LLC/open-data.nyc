@@ -100,7 +100,7 @@ font { display: none; }
                     &[data-option=""]:before { background-color: $grey; }
                     &[data-option="workshop"]:before { background-color: $blue; }
                     &[data-option="panel"]:before { background-color: $yellow; }
-                    &[data-option="demo"]:before { background-color: $red; }
+                    &[data-option="portal-demo"]:before { background-color: $red; }
                     &[data-option="tour"]:before { background-color: $pink; }
                     &[data-option="conference"]:before { background-color: $green; }
                     &[data-option="showcase"]:before { background-color: $purple; }
@@ -242,7 +242,7 @@ font { display: none; }
                     &[data-type=""] { background-color: $lightgrey; }
                     &[data-type="workshop"] { background-color: $blue; }
                     &[data-type="panel"] { background-color: $yellow; }
-                    &[data-type="demo"] { background-color: $red; }
+                    &[data-type="portal-demo"] { background-color: $red; }
                     &[data-type="tour"] { background-color: $pink; }
                     &[data-type="conference"] { background-color: $green; }
                     &[data-type="showcase"] { background-color: $purple; }
@@ -521,7 +521,7 @@ font { display: none; }
             &[data-option=""]:before { background-color: $grey; }
             &[data-option="workshop"]:before { background-color: $blue; }
             &[data-option="panel"]:before { background-color: $yellow; }
-            &[data-option="demo"]:before { background-color: $red; }
+            &[data-option="portal-demo"]:before { background-color: $red; }
             &[data-option="tour"]:before { background-color: $pink; }
             &[data-option="conference"]:before { background-color: $green; }
             &[data-option="showcase"]:before { background-color: $purple; }
