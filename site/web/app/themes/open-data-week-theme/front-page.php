@@ -12,7 +12,7 @@
 			<h5 class="font-weight-light"><?= $about[cmb_pre().'content']; ?></h5>
 		</div>
 		<div class="col-sm-12 col-md-5 md-push-1">
-			<?= wp_oembed_get( $about[cmb_pre().'video'], array('width'=>800) ); ?>
+			<img src="<?= $about[cmb_pre().'graphic']; ?>" alt="" />
 		</div>
 	</div>
 

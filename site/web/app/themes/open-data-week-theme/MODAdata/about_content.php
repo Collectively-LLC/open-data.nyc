@@ -31,13 +31,35 @@ function about_metaboxes() { global $cmb_pre;
       'default'    => 'NYC Open Data Week is a collaboration between NYC Open Data, BetaNYC, BureauBlank and the dynamic NYC civic tech community. We’re kicking off the week on International Open Data Day with School of Data (March 4th) and wrapping up with an Open Data for All Workshop at the NYC Parks Hamilton Fish Computer Resource Center (March 11th). Peruse the descriptions of these events and many others below and sign up!',
   ) );
 
-  // Video
+// Graphic
+  $intro_content->add_field( array(
+      'name'       => __( 'Graphic', 'cmb2' ),
+      'id'         => $cmb_pre . 'graphic',
+      'type'    => 'file',
+      'options' => array( 'url' => false ),
+      'text'    => array(
+        'add_upload_file_text' => 'Add Graphic' // Change upload button text. Default: "Add or Upload File"
+      ),
+      // query_args are passed to wp.media's library query.
+      'query_args' => array(
+        'type' => array(
+         'image/gif',
+         'image/jpeg',
+         'image/png',
+        ),
+      ),
+      'preview_size' => 'medium',
+  ) );
+
+
+/*  // Video
   $intro_content->add_field( array(
       'name'       => __( 'Video', 'cmb2' ),
       'id'         => $cmb_pre . 'video',
       'type'       => 'oembed',
       'default'    => 'https://www.youtube.com/watch?v=pXU_GY7hjPc',
   ) );
+*/
 
 }
 

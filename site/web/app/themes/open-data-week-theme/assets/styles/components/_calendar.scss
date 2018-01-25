@@ -405,7 +405,7 @@ font { display: none; }
                         margin: 0;
                     }
                     .timerow { 
-                        display: inherit;
+                        display: inline-block;
                     }
                     .event {
                         @extend .col-md-2;
@@ -468,7 +468,7 @@ font { display: none; }
 
     // Event Info Modal
     .modal {
-        padding: 0;
+        padding: 0 !important;
     }
     .modal-dialog {
         max-width: 505px;
