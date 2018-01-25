@@ -52,7 +52,7 @@ if($events) {
 					$n=$timespan[0];
 					while($n<=$timespan[1]) {
 						$timerow = $n;
-						if($timerow > 12) { $timerow = $n-12; }
+
 
 						echo '<div class="timerow" data-timerow="'.$n.'">';
 
@@ -60,12 +60,12 @@ if($events) {
 								$allmeta = allmeta($id);
 								$post_date = wp_get_post_terms( $id, 'date')[0];
 
-
-// FIX UP THE MECHANISM THAT SHOWS CARDS AT TIME
-								if($post_date->slug==strtolower(str_replace(' ','-',str_replace(',','',$date))) && $allmeta[cmb_pre().'time_start'] == $timerow) {
-
-
-
+								// Check Start Time as 24hr
+								$start_exp = explode(':',$allmeta[cmb_pre().'time_start']);
+								$start_int = $start_exp[0];
+								if(strpos($start_exp[1],'pm')) { $start_int = $start_int+12; }
+								// If Start Time is within this timerow
+								if($post_date->slug==strtolower(str_replace(' ','-',str_replace(',','',$date))) && $start_int == $timerow) {
 									// CARD VARIABLES
 									if(strpos( $allmeta[cmb_pre().'time_start'] , ':30' )) { $thirty = 'thirty'; } else { $thirty = ''; }
 									$time_diff = time_diff($allmeta[cmb_pre().'time_start'],$allmeta[cmb_pre().'time_end']);
