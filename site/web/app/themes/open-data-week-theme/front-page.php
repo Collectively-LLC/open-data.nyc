@@ -20,7 +20,7 @@
 		<div class="col-xl-12">
 			<h2 class="section_title red text-center text-uppercase circles-above">Calendar of Events</h2>
 		</div>
-		<div class="col-xl-12 blue-border">
+		<div class="col-xl-12 blue-border white-bg">
 			<?=moda_events_calendar();?>
 		</div>
 	</div>

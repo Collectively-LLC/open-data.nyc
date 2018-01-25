@@ -7,8 +7,15 @@
 		width: 100%;
 	}
 
-	.container { 
+	.container, .content.row { 
 		max-width: 1322px; 
+	}
+
+	.wrap.container {
+		max-width: 100%;
+		background-image: url('../images/background_body.jpg');
+		background-size: 100% auto;
+		background-position: 50%;
 	}
 
 	.content .main { 

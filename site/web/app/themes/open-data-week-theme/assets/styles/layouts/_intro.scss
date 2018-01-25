@@ -2,7 +2,10 @@
 
 #intro {
 
-	background: $blue;
+	background-color: $blue;
+	background-image: url('../images/background_header.png');
+	background-size: cover;
+	background-position: 50%;
 	min-height: calc(100vh - 100px);
 
 	.container-fluid {
