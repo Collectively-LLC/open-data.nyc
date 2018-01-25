@@ -270,6 +270,18 @@ jQuery(document).ready(function(){ ////
     }); // end foreach event
 
     // foreach row, scan for has event with data-push, and apply an attribute to that day 
+      // if has [data-push="6"], [data-wide="6"]
+      // else if has [data-push="6"], [data-wide="6"]
+
+/*
+      jQuery('#moda_calendar .events .timerow').each(function() {
+        jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
+      });
+    
+      jQuery('#moda_calendar .day').each(function(){
+          if(jQuery(this).has('[data-push="2"]')) { jQuery(this).css('background','red'); }
+      });
+*/
 
   } // end function
   jQuery('#moda_calendar').ready(pushcards());

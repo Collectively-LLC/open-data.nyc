@@ -1,3 +1,25 @@
+/* TEST STUFF /*
+
+.content.row,
+body .section-calendar,
+#moda_calendar,
+#moda_calendar>.row,
+.events,
+.events>.row,
+.days,
+.planwide
+ {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+#moda_calendar .events {
+    height: 90vh;
+    max-height: 90vh;
+}
+
+/* TEST STUFF */
+
+
 #moda_calendar {
     position: relative;
     display: flex;
