@@ -50,7 +50,7 @@
 		</div>
 	</div>
 
-	<div id="sponsors" class="row section-sponsors blue-border text-center justify-content-center">
+	<div id="sponsors" class="row section-sponsors blue-border white-bg text-center justify-content-center">
 		<h4 class="section_title font-italic">Open Data Week is brought to you by</h4>
 		<div class="sponsors row col-xl-12 text-center justify-content-around align-items-center">
 			<?php 	
