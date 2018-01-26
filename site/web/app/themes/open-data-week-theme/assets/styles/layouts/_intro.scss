@@ -6,7 +6,10 @@
 	background-image: url('../images/background_header.png');
 	background-size: cover;
 	background-position: 50%;
-	min-height: calc(100vh - 40px);
+	min-height: calc(100vh - 100px);
+	@media (max-width: $screen-xs-max) {
+		min-height: calc(100vh - 88px - 60px);
+	}
 
 	.container-fluid {
 		background: $white;
