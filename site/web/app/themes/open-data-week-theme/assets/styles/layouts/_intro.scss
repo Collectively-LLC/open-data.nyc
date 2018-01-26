@@ -6,7 +6,7 @@
 	background-image: url('../images/background_header.png');
 	background-size: cover;
 	background-position: 50%;
-	min-height: calc(100vh - 100px);
+	min-height: calc(100vh - 40px);
 
 	.container-fluid {
 		background: $white;
@@ -42,9 +42,9 @@
 		}
 		@media (max-width: $screen-md-max) {
 			&.one { font-size: 9vw; }
-			&.two { font-size: 5.25vw; }
-			&.three { font-size: 4.75vw; }
-			&.hashtag { font-size: 5.25vw; }
+			&.two { font-size: 7vw; }
+			&.three { font-size: 6vw; }
+			&.hashtag { font-size: 8vw; }
 		}
 	}
 
