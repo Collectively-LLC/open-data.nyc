@@ -58,6 +58,15 @@
 	h4 { font-size: 30px; }
 	h5 { font-size: 24px; }
 	h6 { font-size: 15px; line-height: 18px; font-weight: 500; }
+	@media (max-width: $screen-sm-max) {
+		h1 { font-size: 10vw; }
+		h2 { font-size: 8vw; }
+		h3 { font-size: 7vw; }
+		h4 { font-size: 6vw; }
+		h5 { font-size: 5.5px; }
+		h6 { font-size: 5vw; }
+		h1, h2, h3, h4, h5, h6 { line-height: 1.5; }
+	}
 
 
 // Modals on Mobile Safari apparently //////////////////////////////////////////
@@ -103,6 +112,7 @@
 	
 	.font-weight-light {
 		font-weight: 100;
+		@media (max-width: $screen-sm-max) { font-weight: 200; }
 	}
 
 

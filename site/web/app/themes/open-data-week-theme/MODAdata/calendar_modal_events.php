@@ -46,7 +46,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 				        </div>
 						<div class="col">';
 				            if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
-								echo '<a class="register button rounded" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
+								echo '<a class="register button rounded" data-dismiss="modal" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
 							} else { 
 								echo '<a class="register button rounded" href="'.$allmeta[cmb_pre().'register'].'" target="_blank">Register</a>'; 
 							}
