@@ -8,7 +8,7 @@ if($events) {
 
 // Set Values
 	// first start time to last end time
-	$timespan = array('9','24'); 
+	$timespan = array('8','24'); 
 
 	// event days
 	$days = array(
