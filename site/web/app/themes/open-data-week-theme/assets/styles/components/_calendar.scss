@@ -597,7 +597,10 @@ font { display: none; }
             }
         }
     
-        [id^="eventbrite-widget-container-"]
+        [id^="eventbrite-widget-container-"] {
+            max-height: 80vh;
+            
+        }
 
     }
 
