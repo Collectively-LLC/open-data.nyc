@@ -68,7 +68,7 @@ function events_meta() { global $cpt, $cmb_pre;
   $custom_meta->add_field( array(
     'name' => 'Event Summary',
     'id'   => $cmb_pre.'summary',
-    'type' => 'textarea',
+    'type' => 'wysiwyg',
   ) );
 
 // Register URL
