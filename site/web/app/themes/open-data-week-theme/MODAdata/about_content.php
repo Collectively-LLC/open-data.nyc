@@ -27,7 +27,7 @@ function about_metaboxes() { global $cmb_pre;
   $intro_content->add_field( array(
       'name'       => __( 'Content', 'cmb2' ),
       'id'         => $cmb_pre . 'content',
-      'type'       => 'textarea',
+      'type'       => 'wysiwyg',
       'default'    => 'NYC Open Data Week is a collaboration between NYC Open Data, BetaNYC, BureauBlank and the dynamic NYC civic tech community. We’re kicking off the week on International Open Data Day with School of Data (March 4th) and wrapping up with an Open Data for All Workshop at the NYC Parks Hamilton Fish Computer Resource Center (March 11th). Peruse the descriptions of these events and many others below and sign up!',
   ) );
 
