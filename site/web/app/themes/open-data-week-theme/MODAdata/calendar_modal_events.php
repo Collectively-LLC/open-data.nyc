@@ -30,6 +30,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 					<div class="row">
 				        <div class="col-md-7">
 				        	<h5 class="title">'.get_the_title( $id ).'</h5>
+				        	<h5 class="time">'.$cost->name.'</h5>
 				        	<h5 class="time">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].'</h5>
 				        	<h5 class="borough">'.$borough->name.'</h5>
 				        </div>
