@@ -20,9 +20,13 @@ $filters = array(
 					'Staten Island',
 				),
 	'Cost' => array(
-					'Free',
-					'Paid',
-					'Paid by Subsidy',
+					 'Free',
+					 'Fee for entry',
+					 'Subsidy available',
+				),
+	'Public / Private' => array(
+					 'Public',
+					 'Private',
 				),
 );
 
