@@ -108,8 +108,8 @@
     // Predefine Categories
     $predefined_terms = array(
        'Free'
-      ,'Paid'
-      ,'Paid by Subsidy'
+      ,'Fee for entry'
+      ,'Subsidy available'
     );
     $predefined_taxonomy = 'cost';
     pretax($predefined_taxonomy,$predefined_terms);
