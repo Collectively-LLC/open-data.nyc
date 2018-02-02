@@ -59,6 +59,7 @@ if($events) {
 							foreach ($events as $id => $event) {
 								$allmeta = allmeta($id);
 								$post_date = wp_get_post_terms( $id, 'date')[0];
+								$invitation = wp_get_post_terms( $id, 'invitation')[0];
 
 								// Check Start Time as 24hr
 								$start_exp = explode(':',$allmeta[cmb_pre().'time_start']);
@@ -79,6 +80,7 @@ if($events) {
 											.'<span class="title" data-toggle="modal" data-target="#details'.$id.'">'.get_the_title( $id ).' </span>'
 											.'<span class="time" data-toggle="modal" data-target="#details'.$id.'">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].' </span>'
 											.'<span class="borough" data-toggle="modal" data-target="#details'.$id.'">'.$borough->name.' </span>'
+											.'<span class="invitation" data-toggle="modal" data-target="#details'.$id.'">'.$invitation->name.' </span>'
 											.'<a class="more" data-toggle="modal" data-target="#details'.$id.'">-Click for more details-</a>';
 									if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
 										echo '<a class="button rounded" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
