@@ -36,7 +36,7 @@ function moda_events_calendar( $atts=null ) {
 	<!-- Share Buttons -->
 	<div class="share_buttons">
 		<div class="share">
-			<a href="#" class="icon social">Share via...</a>
+			<!-- <a href="#" class="icon social">Share via...</a> -->
 			<a href="mailto:?Subject=Check%20out%20NYC%20Open%20Data%20Week%21&Body=NYC%20Open%20Data%20Week%20is%20coming%20soon%21%20Get%20more%20info%20from%20their%20website%20-%20http%3A//Open-Data.NYC" class="icon email">Email</a>
 			<!-- <a href="#" onclick="window.print();return false;" class="icon print">Print</a> -->
 		</div>

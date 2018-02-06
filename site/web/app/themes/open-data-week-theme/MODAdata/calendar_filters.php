@@ -24,7 +24,7 @@ $filters = array(
 					 'Fee for entry',
 					 'Subsidy available',
 				),
-	'Public / Private' => array(
+	'Invitation' => array(
 					 'Public',
 					 'Private',
 				),

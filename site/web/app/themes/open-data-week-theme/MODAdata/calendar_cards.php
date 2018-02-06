@@ -78,11 +78,11 @@ if($events) {
 									$clean_date = strtolower(str_replace(' ','-',str_replace(',','',$date)));
 
 									// CARD OUTPUT
-									echo '<div class="event '.$duration.' '.$thirty.'" data-type="'.$type->slug.'" data-borough="'.$borough->slug.'" data-date="'.$clean_date.'" data-cost="'.$cost->slug.'" data-event="'.$id.'" data-push="0">'
+									echo '<div class="event '.$duration.' '.$thirty.'" data-type="'.$type->slug.'" data-borough="'.$borough->slug.'" data-date="'.$clean_date.'" data-cost="'.$cost->slug.'" data-invitation="'.$invitation->slug.'" data-event="'.$id.'" data-push="0">'
 											.'<span class="title" data-toggle="modal" data-target="#details'.$id.'">'.get_the_title( $id ).' </span>'
 											.'<span class="time" data-toggle="modal" data-target="#details'.$id.'">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].' </span>'
-											.'<span class="time" data-toggle="modal" data-target="#details'.$id.'">'.$invitation->name.' </span>'
 											.'<span class="borough" data-toggle="modal" data-target="#details'.$id.'">'.$borough->name.' </span>'
+											.'<span class="invitation" data-toggle="modal" data-target="#details'.$id.'">'.$invitation->name.' </span>'
 											.'<a class="more" data-toggle="modal" data-target="#details'.$id.'">-Click for more details-</a>';
 									if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
 										echo '<a class="button rounded" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 

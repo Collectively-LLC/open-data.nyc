@@ -219,21 +219,22 @@ font { display: none; }
                         display: none !important;
                     }
                     span {
-                        font-size: 15px;
+                        font-size: 14px;
                         display: block;
                         width: 100%;
                         font-weight: bold;
                         line-height: 1 !important;
                         color: $white;
                         overflow: hidden;
-                        line-height: 18px;
-                        max-height: 18px;
-                        &.title { height: 30px; max-height: 30px; }
+                        line-height: 16px;
+                        min-height: 16px;
+                        max-height: 16px;
+                        &.title { font-size: 15px; height: 32px; max-height: 32px; }
                     }
                     a.more {
                         display: block;
                         font-size: 12px;
-                        margin: 20px auto;
+                        padding: 10px 0;
                         text-align: center;
                         font-weight: bold;
                         color: $white;
