@@ -348,6 +348,24 @@ jQuery(document).ready(function(){ ////
 
 
 
+// BEGIN Custom Modal URL JS
+jQuery(document).ready(function(){
+  // if there is a hash, it contains the string 'details', and there's actually a modal with that ID, show the modal
+  if(window.location.hash.indexOf("details") >= 0 && jQuery(window.location.hash).length) {
+    jQuery(window.location.hash).modal("show");
+  }
+  // copy modal URL when you click the button
+  jQuery('.js-modal-link-btn').click(function(){
+    var linkID = jQuery(this).attr('data-event-id');
+    var linkElement = jQuery('#js-modal-link-' + linkID);
+    linkElement.select();
+    if(document.execCommand("copy")){alert('hello');}else{alert('goodbye');}
+    var copy = jQuery(this).html('Copied to clipboard!');
+    setTimeout(function() {jQuery(copy).html('Copy Event Link');}, 2000);
+  });
+});
+// END Custom Modal URL JS
+
 
 
 

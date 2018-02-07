@@ -27,14 +27,14 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
-					<div class="row">
-				        <div class="col-md-7">
+					<div class="row justify-content-between">
+				        <div class="col-auto">
 				        	<h5 class="title">'.get_the_title( $id ).'</h5>
 				        	<h5 class="time">'.$cost->name.'</h5>
 				        	<h5 class="time">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].'</h5>
 				        	<h5 class="borough">'.$borough->name.'</h5>
 				        </div>
-				        <div class="col-md-5 partners">
+				        <div class="col-auto partners">
 				        	'.$partner_list.'
 				        </div>
 				    </div>
@@ -46,11 +46,11 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 		        		</div>
 			        </div>
 		        		
-					<div class="row justify-content-between">
-						<div class="col">
+					<div class="row justify-content-between align-items-end">
+						<div class="col-sm-3 col-auto">
 				            <span class="type" data-option="'.$type->slug.'">'.$type->name.'</span>
 				        </div>
-						<div class="col">';
+						<div class="col-auto">';
 				            if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
 								echo '<a class="register button rounded" data-dismiss="modal" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
 							} else { 
