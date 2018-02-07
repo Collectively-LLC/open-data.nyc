@@ -142,6 +142,16 @@ body .section-calendar,
         text-align: center;
     }
 
+    .filters, .key {
+        li.active { 
+            &:before {
+                width: 25px !important;
+                margin-left: -8px;
+            }
+        }
+    }
+
+
 
     .filters {
         @extend .col-12, .row, .justify-content-center;
@@ -179,9 +189,6 @@ body .section-calendar,
                     li {
                         list-style: none;
                         cursor: pointer;
-                        &.active { 
-                            color: $blue;
-                        }
                     }
                 }
             }
@@ -262,16 +269,16 @@ body .section-calendar,
                     }
 
                     // Event Types
-                    &[data-type=""] { background-color: $lightgrey; }
-                    &[data-type="workshop"] { background-color: $blue; }
-                    &[data-type="panel"] { background-color: $yellow; }
-                    &[data-type="portal-demo"] { background-color: $red; }
-                    &[data-type="tour"] { background-color: $pink; }
-                    &[data-type="conference"] { background-color: $green; }
-                    &[data-type="showcase"] { background-color: $purple; }
-                    &[data-type="community-gathering"] { background-color: $darkblue; }
-                    &[data-type="virtual-engagement"] { background-color: $orange; }
-                    &[data-type="reception"] { background-color: $forest; }
+                    &[data-eventtype=""] { background-color: $lightgrey; }
+                    &[data-eventtype="workshop"] { background-color: $blue; }
+                    &[data-eventtype="panel"] { background-color: $yellow; }
+                    &[data-eventtype="portal-demo"] { background-color: $red; }
+                    &[data-eventtype="tour"] { background-color: $pink; }
+                    &[data-eventtype="conference"] { background-color: $green; }
+                    &[data-eventtype="showcase"] { background-color: $purple; }
+                    &[data-eventtype="community-gathering"] { background-color: $darkblue; }
+                    &[data-eventtype="virtual-engagement"] { background-color: $orange; }
+                    &[data-eventtype="reception"] { background-color: $forest; }
 
                 }
             }
@@ -447,10 +454,14 @@ body .section-calendar,
                         display: inline-block;
                     }
                     &[data-count='0'] {
-                        height: 0px;
-                        margin-bottom: 0;
+                        height: 1px;
+                        margin-bottom: -1px;
                         margin-top: 0;
+                        border: none;
                         overflow: hidden;
+                        .header {
+                            background: transparent;
+                        }
                     }
                 }
             }
@@ -513,16 +524,16 @@ body .section-calendar,
                             padding: 0;
                         }
                         // Event Types
-                        &[data-type=""] { border-color: $lightgrey; }
-                        &[data-type="workshop"] { border-color: $blue; }
-                        &[data-type="panel"] { border-color: $yellow; }
-                        &[data-type="portal-demo"] { border-color: $red; }
-                        &[data-type="tour"] { border-color: $pink; }
-                        &[data-type="conference"] { border-color: $green; }
-                        &[data-type="showcase"] { border-color: $purple; }
-                        &[data-type="community-gathering"] { border-color: $darkblue; }
-                        &[data-type="virtual-engagement"] { border-color: $orange; }
-                        &[data-type="reception"] { border-color: $forest; }
+                        &[data-eventtype=""] { border-color: $lightgrey; }
+                        &[data-eventtype="workshop"] { border-color: $blue; }
+                        &[data-eventtype="panel"] { border-color: $yellow; }
+                        &[data-eventtype="portal-demo"] { border-color: $red; }
+                        &[data-eventtype="tour"] { border-color: $pink; }
+                        &[data-eventtype="conference"] { border-color: $green; }
+                        &[data-eventtype="showcase"] { border-color: $purple; }
+                        &[data-eventtype="community-gathering"] { border-color: $darkblue; }
+                        &[data-eventtype="virtual-engagement"] { border-color: $orange; }
+                        &[data-eventtype="reception"] { border-color: $forest; }
                     }
                     &[data-count='0'] {
                         height: 0px;

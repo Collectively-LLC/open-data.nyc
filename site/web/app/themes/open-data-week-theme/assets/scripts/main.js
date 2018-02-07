@@ -317,7 +317,7 @@ jQuery(document).ready(function(){ ////
 
 
 // Filter Function
-    jQuery('#moda_calendar .filter.list li').on('click', function(e) {
+    jQuery('#moda_calendar .filter li').on('click', function(e) { 
 
       // Get Filter Info
       var filter_id = jQuery(this).attr('data-filter');
