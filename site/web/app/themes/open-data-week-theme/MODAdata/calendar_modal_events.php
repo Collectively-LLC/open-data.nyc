@@ -41,13 +41,13 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 			        <div class="col-md-12">
 			        	<p class="summary">'.$allmeta[cmb_pre().'summary'].'</p>
 			        	<div class="clearfix modal-link-box">
-			        		<input type="text" class="modal-link" id="js-modal-link-'.$id.'" value="open-data.nyc/#details'.$id.'">
+			        		<input type="text" class="modal-link" id="js-modal-link-'.$id.'" value="'.get_bloginfo('url').'/#details'.$id.'">
 		        			<button class="btn btn-link modal-link-btn js-modal-link-btn" data-event-id="'.$id.'">Copy Event Link</button>
 		        		</div>
 			        </div>
 		        		
 					<div class="row justify-content-between align-items-end">
-						<div class="col-sm-3 col-auto">
+						<div class="col-auto">
 				            <span class="type" data-option="'.$type->slug.'">'.$type->name.'</span>
 				        </div>
 						<div class="col-auto">';

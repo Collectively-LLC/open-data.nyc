@@ -229,7 +229,7 @@ font { display: none; }
                         line-height: 16px;
                         min-height: 16px;
                         max-height: 16px;
-                        &.title { font-size: 15px; height: 32px; max-height: 32px; }
+                        &.title { font-size: 15px; height: 31px; max-height: 31px; }
                     }
                     a.more {
                         display: block;
@@ -571,6 +571,8 @@ font { display: none; }
             text-align: left;
             font-size: 15px;
             line-height: 40px;
+            margin-bottom: 8px;
+            display: inline-block;
             &:before { 
                 content: '';
                 display: inline-block;

@@ -359,7 +359,7 @@ jQuery(document).ready(function(){
     var linkID = jQuery(this).attr('data-event-id');
     var linkElement = jQuery('#js-modal-link-' + linkID);
     linkElement.select();
-    if(document.execCommand("copy")){alert('hello');}else{alert('goodbye');}
+    document.execCommand("copy");
     var copy = jQuery(this).html('Copied to clipboard!');
     setTimeout(function() {jQuery(copy).html('Copy Event Link');}, 2000);
   });
