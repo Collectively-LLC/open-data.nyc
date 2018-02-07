@@ -85,7 +85,7 @@ if($events) {
 											.'<span class="invitation" data-toggle="modal" data-target="#details'.$id.'">'.$invitation->name.' </span>'
 											.'<a class="more" data-toggle="modal" data-target="#details'.$id.'">-Click for more details-</a>';
 									if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
-										echo '<a class="button rounded" onmouseover="load_register'.$id.'()" onclick="load_register'.$id.'()" data-toggle="modal" data-target="#register'.$id.'">RegisteR</a>'; 
+										echo '<a class="button rounded" onmouseover="load_register'.$id.'()" onclick="load_register'.$id.'()" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
 									} else { 
 										echo '<a class="button rounded" href="'.$allmeta[cmb_pre().'register'].'" target="_blank">Register</a>'; 
 									}
