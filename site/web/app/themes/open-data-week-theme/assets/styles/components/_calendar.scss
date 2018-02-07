@@ -27,8 +27,7 @@ body .section-calendar,
     display: flex;
     padding: 20px 0 60px;
 
-.event>br,
-font { display: none; }
+    &:hover { div>br,font { display: none; } }
 
     .row { 
         width: 100%;
@@ -483,8 +482,47 @@ font { display: none; }
                     }
                     .event {
                         @extend .col-md-12;
-                        margin: 20px 10px 0;
-                        width: 100%;
+                        margin: 10px 10px 0;
+                        width: calc(100% - 20px);
+                        height: auto;
+                        overflow: hidden;
+                        background: transparent;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        border-left: 20px solid $lightergrey;
+                        border-top: 1px solid $lightergrey;
+                        text-align: left;
+                        span {
+                            color: $black;
+                            display: inline-block;
+                            width: auto;
+                            &.time:after, &.borough:after {
+                                content: '\00A0 | \00A0';
+                            }
+                            &.title { 
+                                width: 100%; 
+                                min-height: 18px;
+                                height: 18px;
+                                &:after {
+                                   content: '';
+                                }
+                            }
+                        }
+                        .more {
+                            font-size: 0;
+                            padding: 0;
+                        }
+                        // Event Types
+                        &[data-type=""] { border-color: $lightgrey; }
+                        &[data-type="workshop"] { border-color: $blue; }
+                        &[data-type="panel"] { border-color: $yellow; }
+                        &[data-type="portal-demo"] { border-color: $red; }
+                        &[data-type="tour"] { border-color: $pink; }
+                        &[data-type="conference"] { border-color: $green; }
+                        &[data-type="showcase"] { border-color: $purple; }
+                        &[data-type="community-gathering"] { border-color: $darkblue; }
+                        &[data-type="virtual-engagement"] { border-color: $orange; }
+                        &[data-type="reception"] { border-color: $forest; }
                     }
                     &[data-count='0'] {
                         height: 0px;
