@@ -24,19 +24,22 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 				</div>
 
 				<script type="text/javascript">
-				    var exampleCallback = function() {
-				        console.log(\'Order complete!\');
-				    };
-				    window.EBWidgets.createWidget({
-				        // Required
-				        widgetType: \'checkout\',
-				        eventId: \''.$eb_event_id.'\',
-				        iframeContainerId: \'eventbrite-widget-container-'.$eb_event_id.'\',
-
-				        // Optional
-				        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-				        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-				    });
+				function load_register'.$id.'() { 
+					if(jQuery(\'#eventbrite-widget-container-'.$eb_event_id.'\').html() == "") {
+					    var exampleCallback = function() {
+					        console.log(\'Order complete!\');
+					    };
+					    window.EBWidgets.createWidget({
+					        // Required
+					        widgetType: \'checkout\',
+					        eventId: \''.$eb_event_id.'\',
+					        iframeContainerId: \'eventbrite-widget-container-'.$eb_event_id.'\',
+					        // Optional
+					        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+					        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+					    });
+					}
+				}
 				</script>
 				';
 		}
