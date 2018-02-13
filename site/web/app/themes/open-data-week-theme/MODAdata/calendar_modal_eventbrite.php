@@ -18,7 +18,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
-				        <div id="eventbrite-widget-container-'.$eb_event_id.'"></div>
+				        <div id="eventbrite-widget-container-'.$eb_event_id.'" style="height: 0"></div>
 				    </div>
 				  </div>
 				</div>

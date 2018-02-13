@@ -604,6 +604,7 @@ body .section-calendar,
         border: 6px solid $yellow;
         padding: 18px 10px;
         border-radius: 0;
+        min-height: 30vh;
         @media (max-width: $screen-sm-max) { 
             padding: 24px 10px;
         }
@@ -698,12 +699,61 @@ body .section-calendar,
         [id^="eventbrite-widget-container-"] {
             max-height: 80vh;
             margin-top: 20px;
+            &:before {
+                display: block;
+                overflow: hidden;
+                margin: 0 auto;
+                content : '|';
+                animation: spintimer 5.4s infinite linear;
+                border-radius: 50%;
+                font-weight: 700;
+                line-height: 100%;
+                text-align: center;
+                color: $lightgrey;
+                border: 2px solid $transparent;
+                transition: all .4s ease-in;
+                height:0;
+                width: 0;
+                font-size: 0;
+                opacity: 0;
+            }
+            &[style*="height: 0"]:before {
+                font-size: 32px;
+                width: 80px;
+                height: 80px; 
+                margin-bottom: 20px;
+                border-color: $lightergrey;
+                opacity: 1;
+            }
         }
 
+    } // end .modal-content
+
+
+@keyframes spintimer {  
+    0% {  
+        transform: rotate(0);  
+        color: $blue;
+    }  
+    32% { 
+        color: $blue; 
     }
-
-
-
+    33% { 
+        transform: rotate(1turn);  
+        color: $yellow; 
+    }
+    66% { 
+        color: $yellow; 
+    }
+    67% { 
+        transform: rotate(2turn);  
+        color: $red; 
+    }
+    100% {  
+        transform: rotate(3turn);  
+        color: $red;
+    } 
+}                    
 
 
 
