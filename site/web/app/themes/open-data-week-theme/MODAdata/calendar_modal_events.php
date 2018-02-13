@@ -33,6 +33,11 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 				        	<h5 class="time">'.$cost->name.'</h5>
 				        	<h5 class="time">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].'</h5>
 				        	<h5 class="borough">'.$borough->name.'</h5>
+				        	<h5 class="address"><small>
+				        		<a href="https://www.google.com/maps?q='.str_replace(' ','+',$allmeta[cmb_pre().'address']).'" target="_blank" class="black">
+				        		'.$allmeta[cmb_pre().'address'].'
+				        		</a>
+				        	</small></h5>
 				        </div>
 				        <div class="col-auto partners">
 				        	'.$partner_list.'

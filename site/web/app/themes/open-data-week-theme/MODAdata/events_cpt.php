@@ -39,6 +39,12 @@ function events_meta() { global $cpt, $cmb_pre;
   $cpt['plural'] = 'Events';
   $cpt['slug']   = 'events';
 
+
+  if(array_key_exists('post', $_GET)) { $eventid = $_GET['post']; }
+  elseif($_POST['post_ID']) { $eventid = $_POST['post_ID']; }
+  $allmeta = allmeta($eventid);
+
+
   $custom_meta = new_cmb2_box( array(
     'id'            => $cpt['slug'].'_meta',
     'title'         => __( $cpt['single'].' Details', 'cmb2' ),
@@ -70,6 +76,19 @@ function events_meta() { global $cpt, $cmb_pre;
     'id'   => $cmb_pre.'summary',
     'type' => 'wysiwyg',
   ) );
+
+// Street Address
+  $custom_meta->add_field( array(
+    'name' => 'Street Address',
+    'id'   => $cmb_pre.'address',
+    'type' => 'text',
+    'description' => 'Valid formats: <br />
+        - <em>street address</em> (<em>1 World Trade Center, New York, NY)<br />
+        - <em>name and city</em> (<em>Tower One Experience, New York, NY</em>)<br />
+        A map will display below after save so you can confirm your venue\'s location.<br />
+    <img src="http://maps.googleapis.com/maps/api/staticmap?center='.$allmeta[cmb_pre().'address'].'&zoom=16&size=380x240&maptype=roadmap&markers=color:blue%7Clabel:%7C'.$allmeta[cmb_pre().'address'].'&sensor=false" />'
+  ) );
+
 
 // Register URL
   $custom_meta->add_field( array(

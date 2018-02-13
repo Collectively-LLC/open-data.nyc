@@ -360,7 +360,7 @@ jQuery(document).ready(function(){
     var linkElement = jQuery('#js-modal-link-' + linkID);
     linkElement.select();
     document.execCommand("copy");
-    var copy = jQuery(this).html('Copied to clipboard!');
+    var copy = jQuery(this).html('Copied!');
     setTimeout(function() {jQuery(copy).html('Copy Event Link');}, 2000);
   });
 });
