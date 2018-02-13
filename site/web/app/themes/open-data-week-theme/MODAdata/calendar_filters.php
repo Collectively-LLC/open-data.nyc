@@ -36,6 +36,7 @@ foreach ($filters as $filter=>$options) {
 	echo '<div class="filter list" data-filter="'.$filter_id.'">';
 	echo '	<a class="dropdown" href="#">Filter by '.$filter.'</a>';
 	echo '	<ul>';
+		echo '	<li class="'.$filter_id.' all active" data-filter="'.$filter_id.'" data-option="">- View All -</li>';
 	foreach($options as $option) {
 		$option_id = str_replace(' ','-',str_replace(',','',strtolower($option)));
 		echo '	<li class="'.$filter_id.' inactive" data-filter="'.$filter_id.'" data-option="'.$option_id.'">'.$option.'</li>';
@@ -70,7 +71,7 @@ foreach ($key as $filter=>$options) {
 	$filter_id = str_replace(' ','',strtolower($filter));
 
 	echo '<div class="filter icons row" data-filter="'.$filter_id.'">';
-	echo '	<div class="col-auto"><a href="#">Select <br />'.$filter.'</a></div>';
+	echo '	<div class="col-auto"><a href="#">Select '.$filter.'</a></div>';
 	echo '	<ul class="col-sm-12 col-md row">';
 	foreach($options as $option) {
 		$option_id = str_replace(' ','-',strtolower($option));

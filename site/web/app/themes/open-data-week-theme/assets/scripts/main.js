@@ -223,6 +223,8 @@ jQuery(document).ready(function(){ ////
 
 // Push Cards for Planner View (push overlapping event cards)
   function pushcards() {
+    
+    // Push All the Cards laterally
     jQuery('#moda_calendar .event').each(function() {
       jQuery(this).attr('data-push',0);
       // Declare current event 
@@ -267,19 +269,15 @@ jQuery(document).ready(function(){ ////
           } // end overlap check
         }); // end foreach above
       } // end if there are above
-    }); // end foreach event
+    }); // end foreach event / end Push All the Cards Laterally
 
-    // foreach row, scan for has event with data-push, and apply an attribute to that day 
-      // if has [data-push="6"], [data-wide="6"]
-      // else if has [data-push="6"], [data-wide="6"]
-
-
+    // Set the timerow's count attribute to the number of visible events starting within
       jQuery('#moda_calendar .events .timerow').each(function() {
         jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
       });
     
+    // Foreach day, scan for event with data-push or data-count, and apply the event count to that day as the 'width' attribute
       jQuery('#moda_calendar .day').each(function(){
-
               if(jQuery(this).find('[data-push="5"]').length > 0) { jQuery(this).attr('data-width','6'); }
         else  if(jQuery(this).find('[data-count="6"]').length > 0) { jQuery(this).attr('data-width','6'); }
         else  if(jQuery(this).find('[data-push="4"]').length > 0) { jQuery(this).attr('data-width','5'); }
@@ -290,11 +288,9 @@ jQuery(document).ready(function(){ ////
         else  if(jQuery(this).find('[data-count="3"]').length > 0) { jQuery(this).attr('data-width','3'); }
         else  if(jQuery(this).find('[data-push="1"]').length > 0) { jQuery(this).attr('data-width','2'); }
         else  if(jQuery(this).find('[data-count="2"]').length > 0) { jQuery(this).attr('data-width','2'); }
-
       });
 
-
-  } // end function
+  } // end function pushcards()
   jQuery('#moda_calendar').ready(pushcards());
 
 
@@ -314,38 +310,46 @@ jQuery(document).ready(function(){ ////
     return false; 
   });
 
-
-
 // Filter Function
-    jQuery('#moda_calendar .filter li').on('click', function(e) { 
+  jQuery('#moda_calendar .filter li').on('click', function(e) { 
 
-      // Get Filter Info
-      var filter_id = jQuery(this).attr('data-filter');
-      var option_id = jQuery(this).attr('data-option');
+    // Get Filter Info
+    var filter_id = jQuery(this).attr('data-filter');
+    var option_id = jQuery(this).attr('data-option');
+    // Clear Filter if All ("")
+    if(jQuery(this).hasClass('all')) {
+      jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
+      jQuery(this).parents('.filter').find('a.dropdown').removeClass('active');
+      jQuery('#moda_calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
+    }
+    // Unfilter Events if Deselecting
+    else if(jQuery(this).hasClass('active')) {
+      jQuery(this).removeClass('active').addClass('inactive');
+      jQuery(this).parents('.filter').find('a.dropdown').removeClass('active');
+      jQuery('#moda_calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
+    }
+    // Filter Events if Selecting
+    else if(jQuery(this).hasClass('inactive')) {
+      jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
+      jQuery(this).parents('.filter').find('a.dropdown').addClass('active');
+      jQuery('#moda_calendar .events').find('.event[data-'+filter_id+'="'+option_id+'"]').removeClass(filter_id+'-hidden');
+      jQuery('#moda_calendar .events').find('.event:not([data-'+filter_id+'="'+option_id+'"])').addClass(filter_id+'-hidden');
+    }
 
-      // Unfilter Events if Deselecting
-      if(jQuery(this).hasClass('active')) {
-        jQuery(this).removeClass('active').addClass('inactive');
-        jQuery('#moda_calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
-      }
-      // Filter Events if Selecting
-      else if(jQuery(this).hasClass('inactive')) {
-        jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
-        jQuery('#moda_calendar .events').find('.event[data-'+filter_id+'="'+option_id+'"]').removeClass(filter_id+'-hidden');
-        jQuery('#moda_calendar .events').find('.event:not([data-'+filter_id+'="'+option_id+'"])').addClass(filter_id+'-hidden');
-      }
-
-      // Count visible .event and assign class to .day to hide as needed
-      jQuery('#moda_calendar .events .day').each(function() {
-        jQuery(this).attr('data-count',jQuery(this).find('.event:visible').length);
-      });
-
-      pushcards();
-      e.preventDefault();
-      return false; 
+    // Count visible .event and assign class to .day to hide as needed
+      var totalcount = 0;
+    jQuery('#moda_calendar .events .day').each(function() {
+      var count = jQuery(this).find('.event:visible').length;
+      jQuery(this).attr('data-count',count);
+      totalcount += count;
     });
-
-
+    // Set calendar data-count to total visible card count
+    jQuery('#moda_calendar .events').attr('data-count',totalcount);
+    
+    pushcards();
+    e.preventDefault();
+    return false; 
+  });
 
 
 // BEGIN Custom Modal URL JS
