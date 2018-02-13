@@ -41,8 +41,9 @@ function events_meta() { global $cpt, $cmb_pre;
 
 
   if(array_key_exists('post', $_GET)) { $eventid = $_GET['post']; }
-  elseif($_POST['post_ID']) { $eventid = $_POST['post_ID']; }
-  $allmeta = allmeta($eventid);
+  elseif(array_key_exists('post_ID', $_POST)) { $eventid = $_POST['post_ID']; }
+  if (isset($eventid)) { $allmeta = allmeta($eventid); } else { $allmeta = array(); }
+  
 
 
   $custom_meta = new_cmb2_box( array(
@@ -78,6 +79,7 @@ function events_meta() { global $cpt, $cmb_pre;
   ) );
 
 // Street Address
+    if(array_key_exists(cmb_pre().'address', $allmeta)) { $address = ''; } else { $address = ''; }
   $custom_meta->add_field( array(
     'name' => 'Street Address',
     'id'   => $cmb_pre.'address',
@@ -86,7 +88,7 @@ function events_meta() { global $cpt, $cmb_pre;
         - <em>street address</em> (<em>1 World Trade Center, New York, NY)<br />
         - <em>name and city</em> (<em>Tower One Experience, New York, NY</em>)<br />
         A map will display below after save so you can confirm your venue\'s location.<br />
-    <img src="http://maps.googleapis.com/maps/api/staticmap?center='.$allmeta[cmb_pre().'address'].'&zoom=16&size=380x240&maptype=roadmap&markers=color:blue%7Clabel:%7C'.$allmeta[cmb_pre().'address'].'&sensor=false" />'
+    <img src="http://maps.googleapis.com/maps/api/staticmap?center='.$address.'&zoom=16&size=380x240&maptype=roadmap&markers=color:blue%7Clabel:%7C'.$address.'&sensor=false" />'
   ) );
 
 
@@ -117,31 +119,6 @@ function events_meta() { global $cpt, $cmb_pre;
   ) );
 
  
-/*
-  // Display Eventbrite Data via API
-  $eventbrite = new_cmb2_box( array(
-    'id'            => 'eventbrite_meta',
-    'title'         => __( 'Eventbrite Details', 'cmb2' ),
-    'object_types'  => array( $cpt['slug'] ), // Post type
-    'context'       => 'normal',
-    'priority'      => 'high',
-    'show_names'    => true, // Show field names on the left
-  ) );
-  
-  // Eventbrite ID
-  $eventbrite->add_field( array(
-    'name'       => __( 'Eventbrite ID', 'cmb2' ),
-    'id'         => $cmb_pre . 'eventbrite_id',
-    'type'       => 'text',
-  ) );
-  // Eventbrite Info
-  $eventbrite->add_field( array(
-    'id'         => 'eventbrite_date',
-    'type'       => 'title',
-    'description'=> 'Eventbrite Info'
-  ) );
-*/
-
 }
 
 

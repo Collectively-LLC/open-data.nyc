@@ -318,13 +318,13 @@ jQuery(document).ready(function(){ ////
     var option_id = jQuery(this).attr('data-option');
     // Clear Filter if All ("")
     if(jQuery(this).hasClass('all')) {
-      jQuery(this).removeClass('inactive').addClass('active').siblings().removeClass('active').addClass('inactive');
+      jQuery(this).removeClass('inactive').addClass('active').siblings().each(function(){jQuery(this).removeClass('active').addClass('inactive');});
       jQuery(this).parents('.filter').find('a.dropdown').removeClass('active');
       jQuery('#moda_calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
     }
     // Unfilter Events if Deselecting
     else if(jQuery(this).hasClass('active')) {
-      jQuery(this).removeClass('active').addClass('inactive');
+      jQuery(this).removeClass('active').addClass('inactive').siblings('.all').removeClass('inactive').addClass('active');
       jQuery(this).parents('.filter').find('a.dropdown').removeClass('active');
       jQuery('#moda_calendar .events').find('.event.'+filter_id+'-hidden').removeClass(filter_id+'-hidden');
     }
@@ -369,9 +369,6 @@ jQuery(document).ready(function(){
   });
 });
 // END Custom Modal URL JS
-
-
-
 
 
 ////////////////////////////////

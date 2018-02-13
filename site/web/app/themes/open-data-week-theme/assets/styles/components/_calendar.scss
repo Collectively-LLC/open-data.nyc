@@ -176,9 +176,6 @@ body .section-calendar,
                     background-color: $lightestgrey;
                     border-color: $lightestgrey;
                     color: $black;
-                    &.active { 
-                        color: $blue; 
-                    }
                     &:after {
                         content: '\25BE';
                         font-size: 28px;
@@ -186,7 +183,7 @@ body .section-calendar,
                         color: $grey;
                         margin-left: 12px;
                     }
-                    &:hover {
+                    &:hover, &.active {
                         color: $blue;
                         border-color: $blue;
                     }
@@ -218,6 +215,8 @@ body .section-calendar,
         max-height: 680px;
         overflow-y: scroll;
         position: relative;
+        border: 2px solid $lightestgrey;
+        padding: 8px 0;
         >.row { overflow: hidden; }
 
         .days {
@@ -350,6 +349,10 @@ body .section-calendar,
 
                     }
                 }
+                @media (max-width: $screen-sm-max) {
+                    display: none;
+                }
+
             }
             .header {
                 color: $grey;
@@ -470,12 +473,19 @@ body .section-calendar,
                     }
                     .timerow { 
                         display: inline-block;
+                        @media (max-width: $screen-xs-max) {
+                            width: 100%;
+                        }
                     }
                     .event {
                         @extend .col-md-2;
                         margin: 20px 10px 0;
                         max-width: 181px !important;
                         display: inline-block;
+                        @media (max-width: $screen-xs-max) {
+                            max-width: calc(100% - 20px) !important;
+                        }
+
                     }
                     &[data-count='0'] {
                         height: 1px;
@@ -536,12 +546,15 @@ body .section-calendar,
                             }
                             &.title { 
                                 width: 100%; 
-                                min-height: 18px;
-                                height: 18px;
+                                min-height: 16px;
+                                height: 16px;
                                 &:after {
                                    content: '';
                                 }
                             }
+                        }
+                        .button {
+                            margin-bottom: 0;
                         }
                         .more {
                             font-size: 0;
@@ -559,6 +572,7 @@ body .section-calendar,
                         &[data-eventtype="virtual-engagement"] { border-color: $orange; }
                         &[data-eventtype="reception"] { border-color: $forest; }
                     }
+                    // when event count for day = 0
                     &[data-count='0'] {
                         height: 1px;
                         margin-bottom: -1px;
