@@ -23,7 +23,7 @@ function create_sponsors() {  global $cpt;
       'parent' => 'Parent '.$cpt['single']
     ),
     'public' => true,
-    'supports' => array( 'title','revisions','thumbnail' ),
+    'supports' => array( 'title','revisions','thumbnail','page-attributes' ),
     'has_archive' => false,
     'menu_icon'   => 'dashicons-star-empty',
   ));

@@ -53,13 +53,7 @@
 	<div id="sponsors" class="row section-sponsors blue-border white-bg text-center justify-content-center">
 		<h4 class="section_title font-italic">Open Data Week is brought to you by</h4>
 		<div class="sponsors row col-xl-12 text-center justify-content-around align-items-center">
-			<?php 	
-				$sponsors = moda_get_items('sponsors');
-				foreach($sponsors as $id=>$sponsor) {
-					echo '<a href="'._meta('url',$id).'"><img src="'.get_the_post_thumbnail_url( $id, 'medium' ).'" 
-					alt="'.$sponsor->post_title.'" /></a>';
-				} 
-			?>
+			<?=moda_display_sponsors();?>
 		</div>
 	</div>
 
