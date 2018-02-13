@@ -70,7 +70,7 @@ foreach ($key as $filter=>$options) {
 	$filter_id = str_replace(' ','',strtolower($filter));
 
 	echo '<div class="filter icons row" data-filter="'.$filter_id.'">';
-	echo '	<div class="col-auto"><a href="#">'.$filter.'</a></div>';
+	echo '	<div class="col-auto"><a href="#">Select <br />'.$filter.'</a></div>';
 	echo '	<ul class="col-sm-12 col-md row">';
 	foreach($options as $option) {
 		$option_id = str_replace(' ','-',strtolower($option));

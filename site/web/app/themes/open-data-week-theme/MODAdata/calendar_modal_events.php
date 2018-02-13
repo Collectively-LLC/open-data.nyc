@@ -28,7 +28,7 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 			          <span aria-hidden="true">&times;</span>
 			        </button>
 					<div class="row justify-content-between">
-				        <div class="col-auto">
+				        <div class="col-auto event-info">
 				        	<h5 class="title">'.get_the_title( $id ).'</h5>
 				        	<h5 class="time">'.$cost->name.'</h5>
 				        	<h5 class="time">'.$allmeta[cmb_pre().'time_start'].' to '.$allmeta[cmb_pre().'time_end'].'</h5>
@@ -40,17 +40,19 @@ $events = moda_get_items('events',array( 'date' => 'ASC'));
 				    </div>
 			        <div class="col-md-12">
 			        	<p class="summary">'.wpautop($allmeta[cmb_pre().'summary']).'</p>
-			        	<div class="clearfix modal-link-box">
-			        		<input type="text" class="modal-link" id="js-modal-link-'.$id.'" value="'.get_bloginfo('url').'/#details'.$id.'">
-		        			<button class="btn btn-link modal-link-btn js-modal-link-btn" data-event-id="'.$id.'">Copy Event Link</button>
-		        		</div>
 			        </div>
 		        		
 					<div class="row justify-content-between align-items-end">
-						<div class="col-auto">
+						<div class="col-12">
 				            <span class="type" data-option="'.$type->slug.'">'.$type->name.'</span>
 				        </div>
-						<div class="col-auto">';
+
+			        	<div class="col-auto col-sm-6 modal-link-box">
+			        		<input type="text" class="modal-link" id="js-modal-link-'.$id.'" value="'.get_bloginfo('url').'/#details'.$id.'">
+		        			<button class="button rounded blue modal-link-btn js-modal-link-btn" data-event-id="'.$id.'">Copy Event Link</button>
+		        		</div>
+
+						<div class="col-auto col-sm-6">';
 				            if(strpos( $allmeta[cmb_pre().'register'], 'eventbrite' ) > 0 ) {
 								echo '<a class="register button rounded" onmouseover="load_register'.$id.'()" onclick="load_register'.$id.'()" data-dismiss="modal" data-toggle="modal" data-target="#register'.$id.'">Register</a>'; 
 							} else { 

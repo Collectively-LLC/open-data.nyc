@@ -71,10 +71,10 @@ if($events) {
 									if(strpos( $allmeta[cmb_pre().'time_start'] , ':30' )) { $thirty = 'thirty'; } else { $thirty = ''; }
 									$time_diff = time_diff($allmeta[cmb_pre().'time_start'],$allmeta[cmb_pre().'time_end']);
 										$duration = 'duration-'.str_replace('.','-',$time_diff);
-									$type = wp_get_post_terms( $id, 'event_type')[0];
-									$borough = wp_get_post_terms( $id, 'borough')[0];
-									$cost = wp_get_post_terms( $id, 'cost')[0];
-									$invitation = wp_get_post_terms( $id, 'invitation')[0];
+									if(wp_get_post_terms( $id, 'event_type')) { $type = wp_get_post_terms( $id, 'event_type')[0]; }
+									if(wp_get_post_terms( $id, 'borough')) { $borough = wp_get_post_terms( $id, 'borough')[0]; }
+									if(wp_get_post_terms( $id, 'cost')) { $cost = wp_get_post_terms( $id, 'cost')[0]; }
+									if(wp_get_post_terms( $id, 'invitation')) { $invitation = wp_get_post_terms( $id, 'invitation')[0]; }
 									$clean_date = strtolower(str_replace(' ','-',str_replace(',','',$date)));
 
 									// CARD OUTPUT

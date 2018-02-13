@@ -10,6 +10,7 @@
 	border: 2px solid $red;
 	line-height: 18px;
 	padding: 8px 16px 10px;
+	margin-bottom: 8px;
 	text-align: center;
 	min-width: 200px;
 	cursor: pointer;
@@ -18,7 +19,18 @@
 		color: $red;
 	}
 
+	&.blue {
+		background: $blue;
+		border-color: $blue;
+		&:hover {
+			background: $white;
+			color: $blue;
+		}
+	}
+
 }
+
+
 
 .modal-link-box {
 	.modal-link {
@@ -30,6 +42,7 @@
 		border: none;
 	}
 
+	/*
 	.modal-link-btn {
 		padding: 20px 0;
 		font-size: 92%;
@@ -41,4 +54,5 @@
 			color: $red;
 		}
 	}
+	*/
 }
