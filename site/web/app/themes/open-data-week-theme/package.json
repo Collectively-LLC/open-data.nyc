@@ -1,8 +1,8 @@
 {
-  "name": "sage",
-  "version": "8.5.2",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "name": "Open Data Week Theme",
+  "version": "1.0.0",
+  "author": "Collectively",
+  "homepage": "docollectively.com",
   "private": true,
   "repository": {
     "type": "git",
